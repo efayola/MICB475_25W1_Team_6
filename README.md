@@ -2,5 +2,5 @@
 
 ## Meeting Minutes and Agenda
   ### October
-  [October 9](meetings/October_9.md)
+  [October 9](Meetings/October_9.md)
 ## Lab Notebook
