@@ -1,6 +1,6 @@
 ## Agenda
 * what needs to be done
 
-## Meeting minutes ##
+## Notes
 * what was done 
 * what needs to be done next
