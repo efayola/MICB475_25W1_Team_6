@@ -20,6 +20,8 @@ read review paper: microbiome first 1000 days (longitudinal analyses)
 * keep copy of original metadata, upload all files as you go along to the github repo
 * can start processing after metadata is formatted
 
+### Pens and sharks and things 
+
 
 ## Goals for next time
 * for the future: email the data publishers? for paper publishing in a bigger journal?
