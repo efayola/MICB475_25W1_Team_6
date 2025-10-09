@@ -4,12 +4,14 @@
 
 ## Notes
 Gut microbiome diversity at different time points of calf development - just fecal samples
-  before and after weening 
-  omit T9
-  pre- and post- weening 
-  longitudinal analyses 
+  * before and after weening 
+  * omit T9
+  * pre- and post- weening 
+  * longitudinal analyses 
 
 read review paper: microbiome first 1000 days 
-  see how they structure figures 
-  i.e. [Pantazi et al., 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10457741/) 
+  * see how they structure figures 
+  * i.e. [Pantazi et al., 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10457741/) 
   
+* keep copy of original metadata, upload all files as you go along to the github repo
+* can start processing after metadata is formatted 
