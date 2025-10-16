@@ -4,6 +4,7 @@
 * Project: Tracking fecal microbiome over cow development time points.
 * For proposal: explain why network analysis
 * run it as a single read, instead of paired because data is too big
+* **NOTE:** run the single read and paired read demux, and then try out denoising for paired only first
 
 ## Notes
 * What to do with the data
