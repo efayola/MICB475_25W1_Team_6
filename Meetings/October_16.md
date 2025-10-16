@@ -1,9 +1,9 @@
 ## Agenda
 * HW for the week: proceed with processing data, **demultiplexing, denoising**, diversity metrics on QIIME2
- * ask Reetu/Evelyn after trimming and before proceedig with next steps
+ * ask Reetu/Evelyn after trimming and before proceeding with next steps
 * Project: Tracking fecal microbiome over cow development time points.
 * For proposal: explain why network analysis
-* run it as a single read, instead of paired -> because data is too big
+* run it as a single read, instead of paired &rarr because data is too big
 
 ## Notes
 * What to do with the data
