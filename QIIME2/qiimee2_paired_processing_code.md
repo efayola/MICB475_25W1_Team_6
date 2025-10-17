@@ -28,4 +28,5 @@ qiime demux summarize \
   --i-data demux_seqs.qza \
   --o-visualization demux.qzv
 ```
-
+#### error file
+```/tmp/qiime2-q2cli-err-jngv22ej.log ```
