@@ -1,8 +1,0 @@
-#detached screen
-screen -S team6_paired
-
-#importing data
-qiime tools import \
-  --type EMPPairedEndSequences \
-  --input-path /datasets/project_2/calf/seqs \
-  --output-path /data/team6_calf/emp-paired-end-sequences/emp-paired-end-sequences.qza
