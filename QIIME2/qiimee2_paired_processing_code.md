@@ -11,7 +11,7 @@ password: Biome2055
 
 ## Code
 **Session detached screen information**  
- ```screen -S team6_paired```
+ ```screen -R team6_paired```
 
 ### Importing Code into QIIME2
 Code adapted from QIIME2 doc under “Fastq manifest” formats ([Here](https://docs.qiime2.org/2024.10/tutorials/importing/#sequence-data-with-sequence-quality-information-i-e-fastq)).
@@ -22,19 +22,10 @@ qiime tools import \
   --input-path /datasets/project_2/calf/manifest.txt \  
   --output-path ./demux_seqs.qza
 ```
-### Demultiplexing using `cutadapt`  
-
-My reasoning for using `cutadapt` plugins instead of `demux` plugins for analysis:
-
-- in the paper they used `cutadapt`
-- `demux` is used for data processed from EMT protocol ([Here](https://docs.qiime2.org/2024.10/plugins/available/demux/emp-paired/)), but we used manifest.
-- Code adapted from the `cutadapt` ([Here](https://docs.qiime2.org/2024.10/plugins/available/cutadapt/demux-paired/)).
-
+### Create visualization of demultiplexed samples
 ```
-qiime cutadapt demux-paired \
-  --i-seqs demux_seqs.qza \
-  --m-forward-barcodes-file /datasets/project_2/calf/metadata.txt \
-  --m-forward-barcodes-column sample-id \
-  --o-per-sample-sequences demux_paired.qza \
-  --o-untrimmed-sequences untrimmed_seqs_paired.qza
+qiime demux summarize \
+  --i-data demux_seqs.qza \
+  --o-visualization demux.qzv
 ```
+
