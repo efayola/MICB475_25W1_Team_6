@@ -4,6 +4,7 @@
 password: Biome2055
 
 ## Available Resources
+- Basic Markdown [Syntax](https://www.markdownguide.org/basic-syntax/)
 - QIIME2 [plug-in help page](https://docs.qiime2.org/2024.10/plugins/available/)
 
 ## Code
