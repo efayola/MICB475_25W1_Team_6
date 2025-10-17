@@ -53,3 +53,11 @@ Traceback (most recent call last):
     raise EOFError("Compressed file ended before the "
 EOFError: Compressed file ended before the end-of-stream marker was reached
 ```
+#### while loop to test for file integrity
+```
+while IFS= read -r line; do
+  file=$(echo "$line" | awk '{print $2}' | tr -d ',')  # Adjust awk column if needed based on manifest format
+  echo "Testing $file"
+  gzip -t "$file" || echo "CORRUPT: $file"
+done < /datasets/project_2/calf/manifest.txt
+```
