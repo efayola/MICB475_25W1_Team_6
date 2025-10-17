@@ -3,6 +3,9 @@
 ```ssh root@10.19.139.156 ```  
 password: Biome2055
 
+## Available Resources
+- QIIME2 [plug-in help page](https://docs.qiime2.org/2024.10/plugins/available/)
+
 ## Code
 **Session detached screen information**  
  ```screen -S team6_paired```
