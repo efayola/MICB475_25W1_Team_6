@@ -30,7 +30,7 @@ qiime demux summarize \
 ```
 #### error file
 ```/tmp/qiime2-q2cli-err-jngv22ej.log ```
-'''
+```
 Traceback (most recent call last):
   File "/opt/conda/envs/qiime2-amplicon-2025.4/lib/python3.10/site-packages/q2cli/commands.py", line 529, in __call__
     results = self._execute_action(
@@ -52,4 +52,4 @@ Traceback (most recent call last):
   File "/opt/conda/envs/qiime2-amplicon-2025.4/lib/python3.10/gzip.py", line 507, in read
     raise EOFError("Compressed file ended before the "
 EOFError: Compressed file ended before the end-of-stream marker was reached
-'''
+```
