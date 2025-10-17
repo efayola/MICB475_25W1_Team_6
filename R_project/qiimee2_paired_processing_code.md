@@ -1,12 +1,13 @@
-#### Login Code Information
+## Login Information
 
 ```ssh root@10.19.139.156 ```  
 password: Biome2055
 
-#### Session detached screen information
+## Code
+**Session detached screen information**  
  ```screen -S team6_paired```
 
-#### Importing Code into QIIME2
+### Importing Code into QIIME2
 ```
 qiime tools import \
   --type "SampleData[PairedEndSequencesWithQuality]" \  
