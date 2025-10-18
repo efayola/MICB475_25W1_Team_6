@@ -20,3 +20,14 @@ qiime demux summarize \
 ```
 scp root@10.19.139.156:/data/team6_calf/single_demux.qzv .
 ```
+
+### Determine ASVs with DADA2
+```
+qiime dada2 denoise-single \
+  --i-demultiplexed-seqs single_demux_seqs.qza \
+  --p-trim-left 0 \
+  --p-trunc-len 228 \
+  --o-representative-sequences single_rep-seqs.qza \
+  --o-table single_table.qza \
+  --o-denoising-stats single_stats.qza
+```
