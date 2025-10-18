@@ -16,3 +16,7 @@ qiime demux summarize \
   --i-data single_demux_seqs.qza \
   --o-visualization single_demux.qzv
 ```
+### Download
+```
+scp root@10.19.139.156:/data/team6_calf/single_demux.qzv .
+```
