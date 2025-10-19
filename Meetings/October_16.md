@@ -16,7 +16,7 @@
 ### Aim
 1. boutique analysis - diversity analysis as line graph/box plot
    * trends over time
-   * timepoint develop
+   * timepoint development 
    * diff btwn male and female
    * before vs after weening
 
