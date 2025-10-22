@@ -1,5 +1,5 @@
 ### Screen session
-```screen -R team6_single```
+```screen -r team6_single```
 
 ### Import manifest and demultiplex
 ```
@@ -30,4 +30,16 @@ qiime dada2 denoise-single \
   --o-representative-sequences single_rep-seqs.qza \
   --o-table single_table.qza \
   --o-denoising-stats single_stats.qza
+```
+
+### Visualize ASVs stats
+```
+qiime feature-table summarize \
+  --i-table single_table.qza \
+  --o-visualization single_table.qzv \
+  --m-sample-metadata-file /datasets/project_2/calf/metadata.txt
+
+qiime feature-table tabulate-seqs \
+  --i-data single_rep-seqs.qza \
+  --o-visualization single_rep-seqs.qzv
 ```
