@@ -14,7 +14,9 @@
 * link everything to question, dont mention irrelevant things
 <br>
 <br>
-**Hypothesis** mention why or what you think may be the difference. this particular bacteria will be more after weening. mention why we will see differences and why will we see those difference.
+**Hypothesis**
+  *mention why or what you think may be the difference. this particular bacteria will be more after weening. mention why we will see differences and why will we see those difference.
 <br>
 <br>
-**references** cite qiime as a tool, packages used 
+**references**
+  *cite qiime as a tool, packages used 
