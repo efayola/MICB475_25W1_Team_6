@@ -4,5 +4,6 @@
   ### October
   [October 9](Meetings/October_9.md)
   [October 16](Meetings/October_16.md)
+  [October 23](Meetings/October_23.md)
   
 ## Lab Notebook
