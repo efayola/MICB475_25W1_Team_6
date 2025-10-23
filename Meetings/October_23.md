@@ -16,6 +16,15 @@
 * mention which diversity metric is being used 
 * refer to statistical metrics used in references
 * link everything to question, dont mention irrelevant things
+
+<br>
+
+**Aims**
+* write in full sentences
+  * “Identify.”
+  * “Perform…”
+* identifying differences between diff groups of calves
+* performing DGE ….
   
 <br>
 
