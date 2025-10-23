@@ -15,12 +15,10 @@
 
 ### Aim
 1. boutique analysis - diversity analysis as line graph/box plot
-   * trends over time
-   * timepoint development 
-   * diff btwn male and female
-   * before vs after weening
+   * trends over time to see timepoint development of microbiome
+   * diff btwn male and female before vs after weening
 
-choose top 3 interesting timepoints 
+choose top 3 interesting timepoints and then do the following:
 
 2. diversity metrics - box plot for the different time points 
 3. core microbiome venn diagram 
