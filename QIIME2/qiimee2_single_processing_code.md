@@ -43,3 +43,10 @@ qiime feature-table tabulate-seqs \
   --i-data single_rep-seqs.qza \
   --o-visualization single_rep-seqs.qzv
 ```
+### Train classifier
+qiime feature-classifier extract-reads \
+  --i-sequences /datasets/classifiers/silva_ref_files/silva-138-99-seqs.qza \
+  --p-f-primer TCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG \
+  --p-r-primer GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC \
+  --p-trunc-len 228 \
+  --o-reads single_ref-seqs-trimmed.qza
