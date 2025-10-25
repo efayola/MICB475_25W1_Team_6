@@ -78,6 +78,15 @@ qiime taxa barplot \
   --m-metadata-file /datasets/project_2/calf/metadata.txt \
   --o-visualization taxa-bar-plots.qzv
 
-scp root@10.19.139.156:/data/team6_calf/taxa-bar-plots.qzv . 
+qiime taxa filter-table \
+  --i-table single_table.qza \
+  --i-taxonomy single_taxonomy.qza \
+  --p-exclude mitochondria,chloroplast \
+  --o-filtered-table table-no-mitochondria-no-chloroplast.qza
+
+qiime feature-table summarize \
+  --i-table table-no-mitochondria-no-chloroplast.qza \
+  --o-visualization table-no-mitochondria-no-chloroplast.qzv \
+  --m-sample-metadata-file /datasets/project_2/calf/metadata.txt
 ```
 
