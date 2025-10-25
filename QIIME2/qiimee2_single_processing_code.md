@@ -70,5 +70,14 @@ qiime feature-classifier classify-sklearn \
 qiime metadata tabulate \
   --m-input-file single_taxonomy.qza \
   --o-visualization single_taxonomy.qzv
+
+# Taxonomy barplots
+qiime taxa barplot \
+  --i-table single_table.qza  \
+  --i-taxonomy single_taxonomy.qza \
+  --m-metadata-file /datasets/project_2/calf/metadata.txt \
+  --o-visualization taxa-bar-plots.qzv
+
+scp root@10.19.139.156:/data/calf/taxa-bar-plots.qzv . 
 ```
 
