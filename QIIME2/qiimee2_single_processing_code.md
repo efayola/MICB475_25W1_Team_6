@@ -48,8 +48,8 @@ qiime feature-table tabulate-seqs \
 ```
 qiime feature-classifier extract-reads \
   --i-sequences /datasets/classifiers/silva_ref_files/silva-138-99-seqs.qza \
-  --p-f-primer TCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG \
-  --p-r-primer GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC \
+  --p-f-primer CCTACGGGNGGCWGCAG \
+  --p-r-primer GACTACHVGGGTATCTAATCC \
   --p-trunc-len 228 \
   --o-reads single_ref-seqs-trimmed.qza
 ```
