@@ -52,5 +52,11 @@ qiime feature-classifier extract-reads \
   --p-f-primer CCTACGGGNGGCWGCAG \
   --p-r-primer GACTACHVGGGTATCTAATCC \
   --p-trunc-len 228 \
-  --o-reads single_ref-seqs-trimmed.qza
+  --o-reads ref-seqs-trimmed.qza
+
+qiime feature-classifier classify-skylearn \
+--i-classifier ref-seqs-trimmed.qza
+--i-reads single_rep-seqs.qza
+--o-classification taxonomy.qza 
 ```
+
