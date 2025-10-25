@@ -45,6 +45,7 @@ qiime feature-table tabulate-seqs \
 ```
 
 ### Train classifier
+https://support.illumina.com/documents/documentation/chemistry_documentation/16s/16s-metagenomic-library-prep-guide-15044223-b.pdf
 ```
 qiime feature-classifier extract-reads \
   --i-sequences /datasets/classifiers/silva_ref_files/silva-138-99-seqs.qza \
