@@ -54,13 +54,6 @@ qiime feature-classifier extract-reads \
   --p-trunc-len 228 \
   --o-reads ref-seqs-trimmed.qza
 
-#I'm not sure if we need the reverse primer so just in case I made one with no reverse primer.
-qiime feature-classifier extract-reads \
-  --i-sequences /datasets/classifiers/silva_ref_files/silva-138-99-seqs.qza \
-  --p-f-primer CCTACGGGNGGCWGCAG \
-  --p-trunc-len 228 \
-  --o-reads single_ref-seqs-trimmed.qza
-
 qiime feature-classifier fit-classifier-naive-bayes \
   --i-reference-reads ref-seqs-trimmed.qza \
   --i-reference-taxonomy /datasets/classifiers/silva_ref_files/silva-138-99-tax.qza \
