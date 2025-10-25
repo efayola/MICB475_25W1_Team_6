@@ -78,6 +78,6 @@ qiime taxa barplot \
   --m-metadata-file /datasets/project_2/calf/metadata.txt \
   --o-visualization taxa-bar-plots.qzv
 
-scp root@10.19.139.156:/data/calf/taxa-bar-plots.qzv . 
+scp root@10.19.139.156:/data/team6_calf/taxa-bar-plots.qzv . 
 ```
 
