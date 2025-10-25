@@ -44,7 +44,7 @@ qiime feature-table tabulate-seqs \
   --o-visualization single_rep-seqs.qzv
 ```
 
-### Train classifier + Taxanomic analysis
+### Train classifier 
 https://support.illumina.com/documents/documentation/chemistry_documentation/16s/16s-metagenomic-library-prep-guide-15044223-b.pdf
 ```
 qiime feature-classifier extract-reads \
@@ -54,10 +54,18 @@ qiime feature-classifier extract-reads \
   --p-trunc-len 228 \
   --o-reads ref-seqs-trimmed.qza
 
-qiime feature-classifier classify-skylearn \
---i-classifier ref-seqs-trimmed.qza \
+qiime feature-classifier fit-classifier-naive-bayes \
+  --i-reference-reads ref-seqs-trimmed.qza \
+  --i-reference-taxonomy /datasets/classifiers/silva_ref_files/silva-138-99-tax.qza \
+  --o-classifier classifier.qza
+```
+
+### Taxanomic analysis
+```
+qiime feature-classifier classify-sklearn \
+--i-classifier classifier.qza \
 --i-reads single_rep-seqs.qza \
---o-classification single_taxonomy.qza \
+--o-classification single_taxonomy.qza 
 
 qiime metadata tabulate \
   --m-input-file single_taxonomy.qza \
