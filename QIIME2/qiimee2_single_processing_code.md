@@ -90,7 +90,7 @@ qiime feature-table summarize \
   --m-sample-metadata-file /datasets/project_2/calf/metadata.txt
 ```
 
-### Alpha Rarefaction
+### Alpha Rarefaction - not working for now
 ```
 qiime phylogeny align-to-tree-mafft-fasttree \
   --i-sequences single_rep-seqs.qza \
