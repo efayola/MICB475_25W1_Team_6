@@ -90,3 +90,21 @@ qiime feature-table summarize \
   --m-sample-metadata-file /datasets/project_2/calf/metadata.txt
 ```
 
+### Alpha Rarefaction
+```
+qiime phylogeny align-to-tree-mafft-fasttree \
+  --i-sequences single_rep-seqs.qza \
+  --o-alignment aligned-rep-seqs.qza \
+  --o-masked-alignment masked-aligned-rep-seqs.qza \
+  --o-tree unrooted-tree.qza \
+  --o-rooted-tree rooted-tree.qza
+
+qiime diversity alpha-rarefaction \
+  --i-table single_table.qza \
+  --i-phylogeny rooted-tree.qza \
+  --p-max-depth 470000 \
+  --m-metadata-file /datasets/project_1/moving_pictures/sample-metadata.tsv \
+  --o-visualization alpha-rarefaction.qzv
+
+```
+
