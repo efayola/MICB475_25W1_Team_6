@@ -103,6 +103,11 @@ qiime feature-table summarize \
 
 ### Alpha Rarefaction - not working for now
 ```
+qiime vsearch dereplicate-sequences 
+--i-sequences single_rep-seqs.qza 
+--o-dereplicated-sequences derep-seqs.qza 
+--o-dereplicated-table derep-table.qza
+
 qiime phylogeny align-to-tree-mafft-fasttree \
   --i-sequences single_rep-seqs.qza \
   --p-mask-max-gap-frequency 0.8 \
