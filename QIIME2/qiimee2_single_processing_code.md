@@ -88,6 +88,17 @@ qiime feature-table summarize \
   --i-table table-no-mitochondria-no-chloroplast.qza \
   --o-visualization table-no-mitochondria-no-chloroplast.qzv \
   --m-sample-metadata-file /datasets/project_2/calf/metadata.txt
+
+qiime feature-table filter-samples \
+  --i-table table-no-mitochondria-no-chloroplast.qza \
+  --m-metadata-file /datasets/project_2/calf/metadata.txt \
+  --p-where "[host_age] != 'T9'" \
+  --o-filtered-table table-no-T9-no-mit-no-chlor.qza
+
+qiime feature-table summarize \
+  --i-table table-no-T9-no-mit-no-chlor.qza \
+  --o-visualization table-no-T9-no-mit-no-chlor.qzv \
+  --m-sample-metadata-file /datasets/project_2/calf/metadata.txt
 ```
 
 ### Alpha Rarefaction - not working for now
