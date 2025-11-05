@@ -103,13 +103,11 @@ qiime feature-table summarize \
 
 ### Alpha Rarefaction - not working for now
 ```
-qiime vsearch dereplicate-sequences \
---i-sequences single_rep-seqs.qza \ 
---o-dereplicated-sequences derep-seqs.qza \
---o-dereplicated-table derep-table.qza
-
 qiime phylogeny align-to-tree-mafft-fasttree \
   --i-sequences single_rep-seqs.qza \
+  --p-parttree \
+  --p-mask-max-gap-frequency 0.8 \
+  --p-mask-min-conservation 0.6 \
   --o-alignment aligned-rep-seqs.qza \
   --o-masked-alignment masked-aligned-rep-seqs.qza \
   --o-tree unrooted-tree.qza \
@@ -119,8 +117,7 @@ qiime diversity alpha-rarefaction \
   --i-table single_table.qza \
   --i-phylogeny rooted-tree.qza \
   --p-max-depth 470000 \
-  --m-metadata-file /datasets/project_1/moving_pictures/sample-metadata.tsv \
+  --m-metadata-file /datasets/project_2/calf/metadata.txt \
   --o-visualization alpha-rarefaction.qzv
-
 ```
 
