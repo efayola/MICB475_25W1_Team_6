@@ -94,6 +94,8 @@ qiime feature-table summarize \
 ```
 qiime phylogeny align-to-tree-mafft-fasttree \
   --i-sequences single_rep-seqs.qza \
+  --p-mask-max-gap-frequency 0.8 \
+  --p-mask-min-conservation 0.6 \
   --o-alignment aligned-rep-seqs.qza \
   --o-masked-alignment masked-aligned-rep-seqs.qza \
   --o-tree unrooted-tree.qza \
