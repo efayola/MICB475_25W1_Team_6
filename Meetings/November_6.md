@@ -9,6 +9,9 @@
 * we propose 1 figure for each of our aim
 * Aim: control using the diets of the calves bcs research shows that there are similar data visualization - see if there's any correlation between the diet and the fecal microbiome
   *  if we want to do this, create a different figure panel of the diet and another for the actual calves
-* maybe we could do core microbiome: overlap between maternal milk and T1-T4 or pellet and T5-T8
 
+* maybe we could do core microbiome: overlap between maternal milk and T1-T4 or pellet and T5-T8
+  *  points of consideration: T5 (calves eating pellet and milk), T1 (just milk), T7 (just pellet)
+
+  
 
