@@ -15,7 +15,7 @@
   *  points of consideration: T5 (calves eating pellet and milk), T1 (just milk), T7 (just pellet)
   *  heat map in addition to the core microbiome analysis is a yes - need to get started early though
  
- *  pcoa analysis: 
+ *  pcoa analysis: ritu will check in on it 
  
 * **breaking up work**
   * Split up running the codes in R
