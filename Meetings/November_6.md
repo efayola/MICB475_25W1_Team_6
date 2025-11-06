@@ -12,7 +12,7 @@
 
 * maybe we could do core microbiome: overlap between maternal milk and T1-T4 or pellet and T5-T8
   *  points of consideration: T5 (calves eating pellet and milk), T1 (just milk), T7 (just pellet)
-  *  heat map in addition to the core microbiome analysis
+  *  heat map in addition to the core microbiome analysis is a yes - need to get started early though
 
   
 
