@@ -22,5 +22,5 @@
   * someone do revisions next week
 
 
-![rough draft of figure](/MICB475_25W1_Team_6/images/figure_rough.jpg)
+![rough draft of figure](/MICB475_25W1_Team_6/Images/figure_rough.jpg)
 
