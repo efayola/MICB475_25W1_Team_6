@@ -21,5 +21,6 @@
   * Split up running the codes in R
   * someone do revisions next week
 
-  
+
+![rough draft of figure](images/figure_rough.jpg)
 
