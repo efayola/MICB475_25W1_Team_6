@@ -21,6 +21,6 @@
   * Split up running the codes in R
   * someone do revisions next week
 
-
+<ins>Rough draft of figure<ins>
 ![rough draft of figure](../Images/figure_rough.jpg)
 
