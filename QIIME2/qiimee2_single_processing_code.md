@@ -121,3 +121,27 @@ qiime diversity alpha-rarefaction \
   --o-visualization alpha-rarefaction.qzv
 ```
 
+### Export File from QIIME2
+
+```
+#export table.qza file
+qiime tools export \
+	--input-path ../team6_calf/single_table.qza \
+	--output-path table_export
+
+#To export a biom file into a text file:
+biom convert \
+-i feature-table.biom \
+--to-tsv \
+-o feature-table.txt
+
+#To export single_taxonomy.qza file
+qiime tools export \
+	--input-path ../team6_calf/single_taxonomy.qza \
+	--output-path taxonomy_export
+
+#To export rooted-tree.qza file
+qiime tools export \
+	--input-path ../team6_calf/rooted-tree.qza \
+	--output-path tree_export
+```
