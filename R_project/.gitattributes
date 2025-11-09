@@ -1,0 +1,2 @@
+feature-table.txt filter=lfs diff=lfs merge=lfs -text
+R_project/single_table_export/feature-table.txt filter=lfs diff=lfs merge=lfs -text
