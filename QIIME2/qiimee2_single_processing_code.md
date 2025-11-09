@@ -144,4 +144,6 @@ qiime tools export \
 qiime tools export \
 	--input-path ../team6_calf/rooted-tree.qza \
 	--output-path tree_export
+
+scp -r root@10.19.139.156:/data/rstudio_export_team6_single .
 ```
