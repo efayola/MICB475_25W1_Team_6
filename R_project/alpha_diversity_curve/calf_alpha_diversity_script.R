@@ -221,12 +221,12 @@ calf_gg_richness_timepoints_sex_no_overlap_with_stats <- calf_gg_richness_timepo
     comparisons = list(c("male", "female")),
     method = "wilcox.test",      # Use Wilcoxon test for 2 groups
     label = "p.signif",           # This will display asterisks (****)
-    method.args = list(exact = FALSE)
-    # vjust = 0.5,
-    # bracket.nudge.y = -100
+    method.args = list(exact = FALSE),
+    vjust = 0.5,
+    y.position = -1
   )
 calf_gg_richness_timepoints_sex_no_overlap_with_stats
 
 ggsave(filename = "calf_gg_richness_timepoints_sex_no_overlap_with_stats.png"
        , calf_gg_richness_timepoints_sex_no_overlap_with_stats
-       , height=4, width=6)
+       , height=8, width=12)
