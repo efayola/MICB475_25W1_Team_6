@@ -75,15 +75,19 @@ calf_phyloseq_filt_nolow_samps <- prune_samples(sample_sums(calf_phyloseq_filt_n
 # Remove samples where month is na
 calf_phyloseq_final <- subset_samples(calf_phyloseq_filt_nolow_samps, !is.na(month) )
 
+sample_variables(calf_phyloseq_final)
+get_variable(calf_phyloseq_final, c("env_medium","host_age","host_sex"))
+nsamples(calf_phyloseq_final)
+
 # Rarefy samples
 # rngseed sets a random number. If you want to reproduce this exact analysis, you need
 # to set rngseed the same number each time
 # t transposes the table to use rarecurve function
 # cex decreases font size
-#rarecurve(t(as.data.frame(otu_table(mpt_final))), cex=0.1)
-#mpt_rare <- rarefy_even_depth(mpt_final, rngseed = 1, sample.size = 1000)
+rarecurve(t(as.data.frame(otu_table(calf_phyloseq_final))), cex=0.1)
+calf_phyloseq_rare <- rarefy_even_depth(calf_phyloseq_final, rngseed = 1, sample.size = 50000)
 
 
 ##### Saving #####
-#save(mpt_final, file="mpt_final.RData")
-#save(mpt_rare, file="mpt_rare.RData")
+save(calf_phyloseq_final, file="calf_phyloseq_final.RData")
+#save(calf_phyloseq_rare, file="calf_phyloseq_rare.RData")
