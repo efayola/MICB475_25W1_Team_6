@@ -84,8 +84,15 @@ nsamples(calf_phyloseq_final)
 # to set rngseed the same number each time
 # t transposes the table to use rarecurve function
 # cex decreases font size
+
+#Generate refraction curve
 rarecurve(t(as.data.frame(otu_table(calf_phyloseq_final))), cex=0.1)
-calf_phyloseq_rare <- rarefy_even_depth(calf_phyloseq_final, rngseed = 1, sample.size = 50000)
+
+depths <- sample_sums(calf_phyloseq_final)
+specific_depth <- depths["SRR29857246"]
+specific_sampling_depth <- depths['SRR29857208']
+
+calf_phyloseq_rare <- rarefy_even_depth(calf_phyloseq_final, rngseed = 1, sample.size = 32000)
 
 
 ##### Saving #####
