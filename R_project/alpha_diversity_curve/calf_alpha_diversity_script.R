@@ -4,7 +4,6 @@ library(tidyverse)
 library(picante)
 library(ggpubr)
 library(rstatix)
-install.packages("ggpubr")
 
 #### Load in RData ####
 load("calf_phyloseq_rare.RData")
