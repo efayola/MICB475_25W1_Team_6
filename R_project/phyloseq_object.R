@@ -88,13 +88,17 @@ nsamples(calf_phyloseq_final)
 #Generate refraction curve
 rarecurve(t(as.data.frame(otu_table(calf_phyloseq_final))), cex=0.1)
 
+#Find sample size for Specific sample ID
 depths <- sample_sums(calf_phyloseq_final)
 specific_depth <- depths["SRR29857246"]
 specific_sampling_depth <- depths['SRR29857208']
 
-calf_phyloseq_rare <- rarefy_even_depth(calf_phyloseq_final, rngseed = 1, sample.size = 32000)
-
+#SRR29857246(male T1) SRR29857319(food) SRR29857320(food) removed
+#414OTUs were removed because they are no longer present in any sample after random subsampling
+calf_phyloseq_rare <- rarefy_even_depth(calf_phyloseq_final, 
+                                        rngseed = 1, 
+                                        sample.size = 32000)
 
 ##### Saving #####
 save(calf_phyloseq_final, file="calf_phyloseq_final.RData")
-#save(calf_phyloseq_rare, file="calf_phyloseq_rare.RData")
+save(calf_phyloseq_rare, file="calf_phyloseq_rare.RData")
