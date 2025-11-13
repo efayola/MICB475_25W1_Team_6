@@ -53,7 +53,7 @@ list_all <- list("Pre-Weaning Female" = core_pre_female, "Pre-Weaning Male" = co
                 "Weaning Female" = core_weaning_female, "Weaning Male" = core_weaning_male)
 
 all_venn <- ggVennDiagram(x = list_all) +
-            scale_fill_gradient(low = "white", high = "skyblue") +
+            scale_fill_gradient(low = "grey90", high = "skyblue") +
             labs(title = "Core Taxa Overlap Across Sex and Developmental Stage") +
             theme(plot.title = element_text(hjust = 0.5, size = 16, face = "bold"))
 
