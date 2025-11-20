@@ -15,7 +15,7 @@
 - panel C = beta diversity pcoa based on timepoint (acknowledge its the same plot as B coloured by diff metadata in the figure legend)
   - we need to see which timepoints to focus on so we did this. going forward T1, T5, and T8 was chosen for comparisons
 
-- beta diversity pcoa: T1
+- beta diversity pcoa: T1, T5, T8
 
 **Fig.2**
 
