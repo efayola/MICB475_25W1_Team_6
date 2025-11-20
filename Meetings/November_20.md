@@ -14,7 +14,9 @@ Fig.1
 - panel B = beta diversity pcoa based on sex
 - panel C = beta diversity pcoa based on timepoint (acknowledge its the same plot as B coloured by diff metadata in the figure legend)
 
-Fig.2 Volcano plot
+Fig.2
+Volcano plot DESEq
 Talk to team 10 - have a lot of sig data DESEq. found a way to count how many are enriched and depleted.
+or Heat map? 
 
 Fig.3
