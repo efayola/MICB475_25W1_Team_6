@@ -16,6 +16,11 @@
   - we need to see which timepoints to focus on so we did this. going forward T1, T5, and T8 was chosen for comparisons
 
 - beta diversity pcoa: T1, T5, T8
+  
+  **OR**
+
+- T1-T8 permanova adonis2: coloured based on coefficient of effect size ** R^2 value**, one for female and one for male
+  - ignore residual and total 
 
 **Fig.2:**
 
@@ -31,6 +36,10 @@ Core microbiome: 4-way analysis for T7 vs T8 for male and for female.
 
 no big diversity changes but minute taxa changes?
 
-**Fig.4:**
-network analysis?
+
+## Other Notes
+- oral presentations:pick super relevants panels and not all panels.
+- create a story thats easy to follow along
+- create draft powerpoint
+
 
