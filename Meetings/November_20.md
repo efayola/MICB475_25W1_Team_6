@@ -16,9 +16,8 @@ Fig.1
 
 Fig.2
 
-Volcano plot DESEq
+DESEq - Volcano plot OR Heat map
 
 Talk to team 10 - have a lot of sig data DESEq. found a way to count how many are enriched and depleted.
-or Heat map? 
 
 Fig.3
