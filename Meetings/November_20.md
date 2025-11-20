@@ -6,3 +6,13 @@
 - review taxonomy results
 - review core microbiome results
 - guidance for network analysis
+
+## Notes
+Fig.1
+- panel A = calf gg richness timepoints sex no overlap (no stats) 
+  - p-value in table supplemental significance compare it to T1
+- panel B = beta diversity pcoa based on sex
+- panel C = beta diversity pcoa based on timepoint (acknowledge its the same plot as B coloured by diff metadata in the figure legend)
+
+Fig.2
+- 
