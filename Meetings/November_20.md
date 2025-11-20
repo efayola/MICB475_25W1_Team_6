@@ -8,16 +8,29 @@
 - guidance for network analysis
 
 ## Notes
-Fig.1
+**Fig.1**
 - panel A = calf gg richness timepoints sex no overlap (no stats) 
   - p-value in table supplemental significance compare it to T1
 - panel B = beta diversity pcoa based on sex
 - panel C = beta diversity pcoa based on timepoint (acknowledge its the same plot as B coloured by diff metadata in the figure legend)
+  - we need to see which timepoints to focus on so we did this. going forward T1, T5, and T8 was chosen for comparisons
 
-Fig.2
+- beta diversity pcoa: T1
+
+**Fig.2**
 
 DESEq - Volcano plot OR Heat map
 
 Talk to team 10 - have a lot of sig data DESEq. found a way to count how many are enriched and depleted.
 
-Fig.3
+**Fig.3**
+
+Panel A: weaning, Panel B: castration 
+
+Core microbiome: 4-way analysis for T7 vs T8 for male and for female. 
+
+no big diversity changes but minute taxa changes?
+
+**Fig. 4**
+
+
