@@ -5,7 +5,7 @@
 - review beta diversity results
 - review taxonomy results
 - review core microbiome results
-- guidance for network analysis
+- guidance for network analysis --> **NOT DOING THIS ANYMORE**
 
 ## Notes
 **Fig.1:**
