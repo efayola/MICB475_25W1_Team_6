@@ -21,6 +21,8 @@
 
 - T1-T8 permanova adonis2: coloured based on coefficient of effect size ** R^2 value**, one for female and one for male
   - ignore residual and total
+
+
 <ins>Adonis Plot Idea<ins>
 ![rough draft of figure](../Images/adonis_plot.jpg)
 
