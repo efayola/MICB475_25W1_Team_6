@@ -7,21 +7,16 @@ library(rstatix)
 library(vegan)
 
 #### Load in RData ####
-load("calf_phyloseq_rare.RData")
-load("calf_phyloseq_final.RData")
+load("all_phyloseq_objects/calf_phyloseq_rare.RData")
+load("all_phyloseq_objects/calf_phyloseq_no_diet.RData")
+load("all_phyloseq_objects/calf_phyloseq_male.RData")
+load("all_phyloseq_objects/calf_phyloseq_female.RData")
 
-
-#subset out samples with diet & milk
-calf_phyloseq_no_diet <- subset_samples(calf_phyloseq_rare, host_age != "not applicable")
-nsamples(calf_phyloseq_no_diet) #check sample number
-samp_dat_wdiv_no_diet <- data.frame(sample_data(calf_phyloseq_no_diet), estimate_richness(calf_phyloseq_no_diet))
 
 set.seed(42)
 #### Beta diversity #####
 calf_dm_braycurtis <- vegdist(t(otu_table(calf_phyloseq_no_diet)), method="bray") # Bray-curtis
 calf_pcoa_bc <- ordinate(calf_phyloseq_no_diet, method="PCoA", distance=calf_dm_braycurtis)
-
-adonis2(calf_dm_braycurtis ~ host_age, data=samp_dat_wdiv_no_diet)
 
 
 #Time Points & Sex
@@ -53,3 +48,20 @@ ggsave("calf_gg_pcoa_sex.png"
        , calf_gg_pcoa_sex
        , height=4, width=5)
 
+# Only Male Beta Diversity
+set.seed(42)
+calf_dm_braycurtis_male <- vegdist(t(otu_table(calf_phyloseq_male)), method="bray") # Bray-curtis
+calf_pcoa_bc_male <- ordinate(calf_phyloseq_male, method="PCoA", distance=calf_dm_braycurtis_male)
+
+calf_gg_pcoa_only_male_timepoints <- plot_ordination(calf_phyloseq_male, calf_pcoa_bc_male, color = "host_age") +
+  stat_ellipse(aes(color = host_age), type = "t", level = 0.95) +
+  labs(col = "Timepoints")
+calf_gg_pcoa_only_male_timepoints
+
+ggsave("beta_diversity_test/calf_gg_pcoa_only_male_timepoints.png"
+       , calf_gg_pcoa_only_male_timepoints
+       , height=4, width=5)
+
+#all possibility for 
+samp_dat_wdiv_no_diet <- data.frame(sample_data(calf_phyloseq_no_diet), estimate_richness(calf_phyloseq_no_diet))
+adonis2(calf_dm_braycurtis ~ host_age, data=samp_dat_wdiv_no_diet)
