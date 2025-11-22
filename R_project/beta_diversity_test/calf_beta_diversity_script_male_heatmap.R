@@ -5,6 +5,9 @@ library(picante)
 library(ggpubr)
 library(rstatix)
 library(vegan)
+library(ggplot2)
+
+load("all_phyloseq_objects/calf_phyloseq_male.RData")
 
 set.seed(42)
 ##### Male Beta Diversity Heat Map
@@ -36,3 +39,25 @@ combn(timepoints, 2, simplify = FALSE, FUN = function(pair) {
   pairwise_permanova_results[[pair_name]] <<- permanova_result
 })
 print(pairwise_permanova_results[["T8 vs T9"]])
+
+
+# --- 1. Data Extraction and Reformatting ---
+# The list 'pairwise_permanova_results' is assumed to exist from the previous step.
+# 1.1. Extract R-squared and P-value for each unique comparison
+permanova_data_triangular <- map_dfr(pairwise_permanova_results, ~ {
+  # The comparison name (e.g., "T1 vs T2") is the name of the list element
+  comparison_name <- .y
+  
+  # Split the name into the two time points (T1 and T2)
+  pairs <- unlist(str_split(comparison_name, " vs "))
+  Timepoint1 <- pairs[1]
+  Timepoint2 <- pairs[2]
+  
+  # Extract R-squared and P-value for the 'host_age' term
+  # The result is typically the first row in the adonis2 output (the host_age term)
+  R2 <- .x[1, "R2"]
+  Pvalue <- .x[1, "Pr(>F)"]
+  
+  # Return a single row data frame
+  return(data.frame(Timepoint1, Timepoint2, R2, Pvalue))
+}, .id = "Comparison")
