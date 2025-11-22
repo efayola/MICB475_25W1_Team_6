@@ -98,7 +98,24 @@ specific_sampling_depth <- depths['SRR29857208']
 calf_phyloseq_rare <- rarefy_even_depth(calf_phyloseq_final, 
                                         rngseed = 1, 
                                         sample.size = 32000)
+nsamples(calf_phyloseq_rare)
 
 ##### Saving #####
 save(calf_phyloseq_final, file="calf_phyloseq_final.RData")
 save(calf_phyloseq_rare, file="calf_phyloseq_rare.RData")
+
+
+#subset out samples with diet & milk
+calf_phyloseq_no_diet <- subset_samples(calf_phyloseq_rare, host_age != "not applicable")
+nsamples(calf_phyloseq_no_diet) #check sample number
+save(calf_phyloseq_no_diet, file="calf_phyloseq_no_diet.RData")
+
+#subset male phyloseq
+calf_phyloseq_male <- subset_samples(calf_phyloseq_rare, host_sex == "male")
+nsamples(calf_phyloseq_male) #check sample number
+save(calf_phyloseq_male, file="calf_phyloseq_male.RData")
+
+#subset male phyloseq
+calf_phyloseq_female <- subset_samples(calf_phyloseq_rare, host_sex == "female")
+nsamples(calf_phyloseq_female) #check sample number
+save(calf_phyloseq_female, file="calf_phyloseq_female.RData")

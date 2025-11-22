@@ -16,6 +16,7 @@ calf_phyloseq_no_diet <- subset_samples(calf_phyloseq_rare, host_age != "not app
 nsamples(calf_phyloseq_no_diet) #check sample number
 samp_dat_wdiv_no_diet <- data.frame(sample_data(calf_phyloseq_no_diet), estimate_richness(calf_phyloseq_no_diet))
 
+set.seed(42)
 #### Beta diversity #####
 calf_dm_braycurtis <- vegdist(t(otu_table(calf_phyloseq_no_diet)), method="bray") # Bray-curtis
 calf_pcoa_bc <- ordinate(calf_phyloseq_no_diet, method="PCoA", distance=calf_dm_braycurtis)
