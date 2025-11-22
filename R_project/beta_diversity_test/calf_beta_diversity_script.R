@@ -62,6 +62,4 @@ ggsave("beta_diversity_test/calf_gg_pcoa_only_male_timepoints.png"
        , calf_gg_pcoa_only_male_timepoints
        , height=4, width=5)
 
-#all possibility for 
-samp_dat_wdiv_no_diet <- data.frame(sample_data(calf_phyloseq_no_diet), estimate_richness(calf_phyloseq_no_diet))
-adonis2(calf_dm_braycurtis ~ host_age, data=samp_dat_wdiv_no_diet)
+
