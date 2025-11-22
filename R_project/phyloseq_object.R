@@ -109,3 +109,13 @@ save(calf_phyloseq_rare, file="calf_phyloseq_rare.RData")
 calf_phyloseq_no_diet <- subset_samples(calf_phyloseq_rare, host_age != "not applicable")
 nsamples(calf_phyloseq_no_diet) #check sample number
 save(calf_phyloseq_no_diet, file="calf_phyloseq_no_diet.RData")
+
+#subset male phyloseq
+calf_phyloseq_male <- subset_samples(calf_phyloseq_rare, host_sex == "male")
+nsamples(calf_phyloseq_male) #check sample number
+save(calf_phyloseq_male, file="calf_phyloseq_male.RData")
+
+#subset male phyloseq
+calf_phyloseq_female <- subset_samples(calf_phyloseq_rare, host_sex == "female")
+nsamples(calf_phyloseq_female) #check sample number
+save(calf_phyloseq_female, file="calf_phyloseq_female.RData")
