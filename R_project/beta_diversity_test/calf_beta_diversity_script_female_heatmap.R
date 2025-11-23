@@ -7,18 +7,18 @@ library(rstatix)
 library(vegan)
 library(ggplot2)
 
-load("all_phyloseq_objects/calf_phyloseq_male.RData")
+load("all_phyloseq_objects/calf_phyloseq_female.RData")
 
 set.seed(42)
-#Male Beta Diversity Heat Map
-calf_dm_braycurtis_male <- vegdist(t(otu_table(calf_phyloseq_male)), method="bray") # Bray-curtis
-#all possibility for male
-samp_dat_wdiv_male <- data.frame(sample_data(calf_phyloseq_male), estimate_richness(calf_phyloseq_male))
-adonis2(calf_dm_braycurtis_male ~ host_age, data=samp_dat_wdiv_male)
+#female Beta Diversity Heat Map
+calf_dm_braycurtis_female <- vegdist(t(otu_table(calf_phyloseq_female)), method="bray") # Bray-curtis
+#all possibility for female
+samp_dat_wdiv_female <- data.frame(sample_data(calf_phyloseq_female), estimate_richness(calf_phyloseq_female))
+adonis2(calf_dm_braycurtis_female ~ host_age, data=samp_dat_wdiv_female)
 
 set.seed(42)
 #Get the unique time points
-timepoints <- unique(sample_data(calf_phyloseq_male)$host_age)
+timepoints <- unique(sample_data(calf_phyloseq_female)$host_age)
 timepoints <- as.character(timepoints)
 # Generate all unique combinations of two time points
 pairwise_combinations <- combn(timepoints, 2, simplify = FALSE)
@@ -42,7 +42,7 @@ for (pair in pairwise_combinations) {
   # --- Subsetting and Calculation ---
   
   # Subset the phyloseq object for the current pair of timepoints
-  calf_phyloseq_subset <- subset_samples(calf_phyloseq_male, host_age %in% c(tp1, tp2))
+  calf_phyloseq_subset <- subset_samples(calf_phyloseq_female, host_age %in% c(tp1, tp2))
   
   # Calculate Bray-Curtis distance for the subsetted data
   calf_dm_braycurtis_subset <- vegdist(t(otu_table(calf_phyloseq_subset)), method="bray")
@@ -87,7 +87,7 @@ all_permanova_results_merged_no_T9<- rbind(all_permanova_results_split, df_all_p
   filter(TP2 != "T9")
 
 #generate lower triangle heatmap
-calf_beta_diversity_heatmap_male <- ggplot(all_permanova_results_merged_no_T9, aes(x = TP1, y = TP2, fill = R2)) +
+calf_beta_diversity_heatmap_female <- ggplot(all_permanova_results_merged_no_T9, aes(x = TP1, y = TP2, fill = R2)) +
   
   # Add tiles (the squares) and map the R2 value to the fill color
   geom_tile() +
@@ -120,8 +120,8 @@ calf_beta_diversity_heatmap_male <- ggplot(all_permanova_results_merged_no_T9, a
     panel.background = element_rect(fill = "white", color = NA)
   )
 
-calf_beta_diversity_heatmap_male
+calf_beta_diversity_heatmap_female
 
-ggsave("beta_diversity_test/calf_beta_diversity_heatmap_male.png"
-       , calf_beta_diversity_heatmap_male
+ggsave("beta_diversity_test/calf_beta_diversity_heatmap_female.png"
+       , calf_beta_diversity_heatmap_female
        , height=4, width=5)
