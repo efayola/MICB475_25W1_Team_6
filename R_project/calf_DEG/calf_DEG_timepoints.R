@@ -6,7 +6,7 @@ library(DESeq2)
 
 
 #### Load data ####
-load("calf_phyloseq_rare.RData")
+load("all_phyloseq_objects/calf_phyloseq_rare.RData")
 
 #### DESeq sex ####
 calf_plus1 <- transform_sample_counts(calf_phyloseq_rare, function(x) x+1)
