@@ -7,7 +7,7 @@ library(rstatix)
 
 #### Load in RData ####
 load("all_phyloseq_objects/calf_phyloseq_rare.RData")
-load("calf_phyloseq_final.RData")
+load("all_phyloseq_objects/calf_phyloseq_final.RData")
 
 nsamples(calf_phyloseq_rare)
 
@@ -20,16 +20,17 @@ estimate_richness(calf_phyloseq_rare)
 #subset out samples with diet & milk
 calf_phyloseq_no_diet <- subset_samples(calf_phyloseq_rare, host_age != "not applicable")
 nsamples(calf_phyloseq_no_diet) #check sample number
+calf_phyloseq_no_diet_and_T9 <- subset_samples(calf_phyloseq_no_diet, host_age != "T9")
+nsamples(calf_phyloseq_no_diet_and_T9)
 
-
-#plot alpha diversity metric for male & female in bulk
+#plot alpha diversity metric for male & female in bulk w/o diet & T9
 set.seed(42)
-calf_gg_richness_sex <- plot_richness(calf_phyloseq_no_diet, x = "host_sex", measures = c("Shannon","Chao1")) +
+calf_gg_richness_sex <- plot_richness(calf_phyloseq_no_diet_and_T9, x = "host_sex", measures = c("Shannon","Chao1")) +
   labs(x = expression(bold("Sample Category")), y = expression(bold("Alpha Diversity Measure")))+
   geom_point(aes(color = NULL), alpha = 0) + # Makes default points transparent
   geom_jitter(aes(color = host_sex), width = 0.2, size = 2, alpha = 0.8) +                  # disperses points
   geom_boxplot(alpha = 0) +                                                                 # transparent boxplot
-  scale_color_manual(values = c("#1b9e77", "#d95f02")) +                                    # custom nice colors "#7570b3" "#66a61e"
+  # scale_color_manual(values = c("#1b9e77", "#d95f02")) +                                    # custom nice colors "#7570b3" "#66a61e"
   scale_x_discrete(limits = c("male", "female")) + 
   theme(axis.text.x = element_text(angle = 0, hjust = 0.5, face = "bold"),
         axis.text.y = element_text(face = "bold"),
