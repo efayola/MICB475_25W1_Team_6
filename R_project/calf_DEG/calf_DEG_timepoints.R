@@ -7,10 +7,10 @@ library(DESeq2)
 
 #### Load data ####
 load("calf_phyloseq_final.RData")
-tax_glom(calf_phyloseq_final, taxrank = "Family")
+calf_phyloseq_family_final <- tax_glom(calf_phyloseq_final, taxrank = "Family")
 
 #### DESeq sex ####
-calf_plus1 <- transform_sample_counts(calf_phyloseq_final, function(x) x+1)
+calf_plus1 <- transform_sample_counts(calf_phyloseq_family_final, function(x) x+1)
 calf_sex_deseq <- phyloseq_to_deseq2(calf_plus1, ~`host_sex`)
 DESEQ_calf_sex <- DESeq(calf_sex_deseq)
 res_calf_sex <- results(DESEQ_calf_sex, name = "host_sex_male_vs_female", tidy = TRUE)
@@ -42,7 +42,7 @@ sigASVs_calf_sex_vec <- sigASVs_calf_sex %>%
   pull(ASV)
 
 # Prune phyloseq file
-calf_sex_DESeq <- prune_taxa(sigASVs_calf_sex_vec,calf_phyloseq_rare)
+calf_sex_DESeq <- prune_taxa(sigASVs_calf_sex_vec,calf_phyloseq_family_final)
 sigASVs_calf_sex <- tax_table(calf_sex_DESeq) %>% as.data.frame() %>%
   rownames_to_column(var="ASV") %>%
   right_join(sigASVs_calf_sex) %>%
@@ -60,7 +60,7 @@ ggsave("DEG_sex_bar.png",
 T1_ref  <- "T1"
 T5_test <- "T5"
 
-T1_T5_pair <- subset_samples(calf_phyloseq_rare, host_age %in% c(T1_ref, T5_test)) %>%
+T1_T5_pair <- subset_samples(calf_phyloseq_family_final, host_age %in% c(T1_ref, T5_test)) %>%
   transform_sample_counts(function(x) x + 1)
 
 calf_deseq_T1_T5 <- phyloseq_to_deseq2(T1_T5_pair, ~`host_age`)
@@ -128,7 +128,7 @@ ggsave("DEG_T1_T5_family_bar.png",
 T5_ref  <- "T5"
 T8_test <- "T8"
 
-T5_T8_pair <- subset_samples(calf_phyloseq_rare, host_age %in% c(T5_ref, T8_test)) %>%
+T5_T8_pair <- subset_samples(calf_phyloseq_family_final, host_age %in% c(T5_ref, T8_test)) %>%
   transform_sample_counts(function(x) x + 1)
 
 calf_deseq_T5_T8 <- phyloseq_to_deseq2(T5_T8_pair, ~`host_age`)
@@ -194,7 +194,7 @@ ggsave("DEG_T5_T8_family_bar.png",
 T1_ref  <- "T1"
 T8_test <- "T8"
 
-T1_T8_pair <- subset_samples(calf_phyloseq_rare, host_age %in% c(T1_ref, T8_test)) %>%
+T1_T8_pair <- subset_samples(calf_phyloseq_family_final, host_age %in% c(T1_ref, T8_test)) %>%
   transform_sample_counts(function(x) x + 1)
 
 calf_deseq_T1_T8 <- phyloseq_to_deseq2(T1_T8_pair, ~`host_age`)
@@ -247,7 +247,25 @@ p1 <- make_volcano(res_T1_T5, "T5 vs T1")
 p2 <- make_volcano(res_T5_T8, "T8 vs T5")
 p3 <- make_volcano(res_calf_sex, "M vs F")
 
-# Now this will give ONE clean shared legend
+p1 + 
+  plot_layout(guides = "collect") &
+  theme(legend.position = "bottom")
+
+ggsave("vol_T5vsT1_final.png", width = 6, height = 7, dpi = 300, bg = "white")
+
+p2 + 
+  plot_layout(guides = "collect") &
+  theme(legend.position = "bottom")
+
+ggsave("vol_T8vsT5_final.png", width = 6, height = 7, dpi = 300, bg = "white")
+
+p3 + 
+  plot_layout(guides = "collect") &
+  theme(legend.position = "bottom")
+
+ggsave("vol_MvsF_final.png", width = 6, height = 7, dpi = 300, bg = "white")
+
+
 p1 + p2 + p3 +
   plot_layout(guides = "collect") &
   theme(legend.position = "bottom")
@@ -258,4 +276,4 @@ p1 + p2 +
   plot_layout(guides = "collect") &
   theme(legend.position = "bottom")
 
-ggsave("vol_T5vsT1_T8vsT5_final.png", width = 18, height = 7, dpi = 300, bg = "white")
+ggsave("vol_T5vsT1_T8vsT5_final.png", width = 12, height = 7, dpi = 300, bg = "white")
