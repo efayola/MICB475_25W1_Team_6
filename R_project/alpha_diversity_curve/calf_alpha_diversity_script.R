@@ -6,7 +6,7 @@ library(ggpubr)
 library(rstatix)
 
 #### Load in RData ####
-load("calf_phyloseq_rare.RData")
+load("all_phyloseq_objects/calf_phyloseq_rare.RData")
 load("calf_phyloseq_final.RData")
 
 nsamples(calf_phyloseq_rare)
