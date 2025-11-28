@@ -84,7 +84,8 @@ calf_gg_richness_T6 <- plot_richness(calf_phyloseq_T6, x = "host_sex", measures 
   geom_point(aes(color = NULL), alpha = 0) + # Makes default points transparent
   geom_jitter(aes(color = host_sex), width = 0.2, size = 2, alpha = 0.8) +                  # disperses points
   geom_boxplot(alpha = 0) +                                                                 # transparent boxplot
-  scale_color_manual(values = c("#1b9e77", "#d95f02")) +                                    # custom nice colors "#7570b3" "#66a61e"
+  # scale_color_manual(values = c("#1b9e77", "#d95f02")) +                                    # custom nice colors "#7570b3" "#66a61e"
+  scale_color_manual(values = c("#F8766D", "#00BFC4")) +
   scale_x_discrete(limits = c("male", "female")) + 
   theme(axis.text.x = element_text(angle = 0, hjust = 0.5, face = "bold"),
         axis.text.y = element_text(face = "bold"),
@@ -117,16 +118,16 @@ calf_gg_richness_T6_no_overlap_with_stats
 
 
 
-# compare between timeline in bulk--------------
+# compare between timeline in bulk w/o T9--------------
 set.seed(42)
-calf_gg_richness_timepoints <- plot_richness(calf_phyloseq_no_diet, x = "host_age", measures = c("Shannon","Chao1")) +
+calf_gg_richness_timepoints <- plot_richness(calf_phyloseq_no_diet_and_T9, x = "host_age", measures = c("Shannon","Chao1")) +
   labs(x = expression(bold("Sample Category")), y = expression(bold("Alpha Diversity Measure"))) +
   geom_point(aes(color = NULL), alpha = 0) + # Makes default points transparent
   geom_jitter(aes(color = host_age),size = 2, alpha = 0.8) +                  # disperses points
   geom_boxplot(alpha = 0, position = position_dodge(width = 2)) +                 # transparent boxplot
 
   #scale_color_manual(name = "Host Sex",values = c("male" = "#1b9e77", "female" = "#d95f02"))+           # custom nice colors "#7570b3" "#66a61e"
-  scale_x_discrete(limits = c("T1","T2","T3","T4","T5","T6","T7","T8","T9")) +
+  scale_x_discrete(limits = c("T1","T2","T3","T4","T5","T6","T7","T8")) +
   theme(axis.text.x = element_text(angle = 0, hjust = 0.5, face = "bold"),
         axis.text.y = element_text(face = "bold"),
         strip.text = element_text(face = "bold"),
@@ -142,7 +143,7 @@ calf_gg_richness_timepoints_no_overlap <- calf_gg_richness_timepoints
 calf_gg_richness_timepoints_no_overlap$layers <- calf_gg_richness_timepoints_no_overlap$layers[-(1:2)]
 calf_gg_richness_timepoints_no_overlap
 
-ggsave(filename = "calf_gg_richness_timepoints_no_overlap.png"
+ggsave(filename = "alpha_diversity_curve/calf_gg_richness_timepoints_no_overlap.png"
        , calf_gg_richness_timepoints_no_overlap
        , height=4, width=6)
 
@@ -184,7 +185,8 @@ ggsave(filename = "calf_gg_richness_timepoints_no_overlap_with_stats_T1_T2.png"
 
 
 ##### TimePoint with sex --------------
-calf_gg_richness_timepoints_sex <- plot_richness(calf_phyloseq_no_diet, x = "host_sex", measures = c("Shannon","Chao1")) +
+set.seed(42)
+calf_gg_richness_timepoints_sex <- plot_richness(calf_phyloseq_no_diet_and_T9, x = "host_sex", measures = c("Shannon","Chao1")) +
   labs(x = expression(bold("Sample Category")), y = expression(bold("Alpha Diversity Measure"))) +
   geom_point(aes(color = NULL), alpha = 0) + # Makes default points transparent
   geom_jitter(aes(color = host_sex),
@@ -210,7 +212,7 @@ calf_gg_richness_timepoints_sex <- plot_richness(calf_phyloseq_no_diet, x = "hos
 calf_gg_richness_timepoints_sex_no_overlap <- calf_gg_richness_timepoints_sex
 calf_gg_richness_timepoints_sex_no_overlap$layers <- calf_gg_richness_timepoints_sex_no_overlap$layers[-(1:2)]
 calf_gg_richness_timepoints_sex_no_overlap
-ggsave(filename = "calf_gg_richness_timepoints_sex_no_overlap.png"
+ggsave(filename = "alpha_diversity_curve/calf_gg_richness_timepoints_sex_no_overlap.png"
        , calf_gg_richness_timepoints_sex_no_overlap
        , height=4, width=6)
 
