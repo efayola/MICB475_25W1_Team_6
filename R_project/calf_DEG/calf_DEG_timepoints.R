@@ -6,10 +6,11 @@ library(DESeq2)
 
 
 #### Load data ####
-load("calf_phyloseq_rare.RData")
+load("calf_phyloseq_final.RData")
+tax_glom(calf_phyloseq_final, taxrank = "Family")
 
 #### DESeq sex ####
-calf_plus1 <- transform_sample_counts(calf_phyloseq_rare, function(x) x+1)
+calf_plus1 <- transform_sample_counts(calf_phyloseq_final, function(x) x+1)
 calf_sex_deseq <- phyloseq_to_deseq2(calf_plus1, ~`host_sex`)
 DESEQ_calf_sex <- DESeq(calf_sex_deseq)
 res_calf_sex <- results(DESEQ_calf_sex, name = "host_sex_male_vs_female", tidy = TRUE)
@@ -75,6 +76,7 @@ vol_plot_T1_T5 <- res_T1_T5 %>%
 
 
 ggsave(filename="DEG_T1_T5_vol_plot.png",vol_plot_T1_T5)
+
 
 # To get table of results
 sig_T1_T5_ASVs <- res_T1_T5 %>% 
@@ -244,7 +246,6 @@ make_volcano <- function(res, title) {
 p1 <- make_volcano(res_T1_T5, "T5 vs T1")
 p2 <- make_volcano(res_T5_T8, "T8 vs T5")
 p3 <- make_volcano(res_calf_sex, "M vs F")
-p4 <- make_volcano(res_T1_T8, "T8 vs T1")
 
 # Now this will give ONE clean shared legend
 p1 + p2 + p3 +
@@ -253,15 +254,8 @@ p1 + p2 + p3 +
 
 ggsave("vol_T5vsT1_T8vsT5_MvsF_final.png", width = 18, height = 7, dpi = 300, bg = "white")
 
-p1 + p4 +
+p1 + p2 +
   plot_layout(guides = "collect") &
   theme(legend.position = "bottom")
 
-ggsave("vol_T5vsT1_T8vsT1_final.png", width = 18, height = 7, dpi = 300, bg = "white")
-
-p1 + p4 + p3 +
-  plot_layout(guides = "collect") &
-  theme(legend.position = "bottom")
-
-ggsave("vol_T5vsT1_T8vsT1_MvsF_final.png", width = 18, height = 7, dpi = 300, bg = "white")
-
+ggsave("vol_T5vsT1_T8vsT5_final.png", width = 18, height = 7, dpi = 300, bg = "white")
