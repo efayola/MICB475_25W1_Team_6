@@ -105,6 +105,30 @@ resultsNames(DESEQ_calf_T6_T1)
 res_calf_T6_T1 <- results(DESEQ_calf_T6_T1, name = "host_age_T6_vs_T1", tidy = TRUE)
 View(res_calf_T6_T1)
 
+
+# To get table of results
+sigASVs_T6_T1 <- res_calf_T6_T1 %>% 
+  filter(padj<0.01 & abs(log2FoldChange)>2) %>%
+  dplyr::rename(ASV=row)
+View(sigASVs_T6_T1)
+#To get ASV
+sigASVs_T6_T1_vec <- sigASVs_T6_T1 %>%
+  pull(ASV)
+
+# Prune phyloseq file
+T6_T1_DESeq <- prune_taxa(sigASVs_T6_T1_vec,calf_phyloseq_no_diet_and_T9)
+sigASVs_T6_T1_merge <- tax_table(T6_T1_DESeq) %>% as.data.frame() %>%
+  rownames_to_column(var="ASV") %>%
+  right_join(sigASVs_T6_T1) %>%
+  arrange(log2FoldChange) %>%
+  mutate(Genus = make.unique(Genus)) %>%
+  mutate(Genus = factor(Genus, levels=unique(Genus))) %>%
+  mutate(Score = -log10(padj) * abs(log2FoldChange))  %>%
+  arrange(desc(Score)) %>%
+  slice_head(n = 10)
+View(sigASVs_T6_T1_merge)
+
+
 #graph volcano plot
 vol_plot_T6_T1_upd <- res_calf_T6_T1 %>%
   mutate(significant = padj<0.01 & abs(log2FoldChange)>2) %>%
@@ -115,13 +139,13 @@ vol_plot_T6_T1_upd <- res_calf_T6_T1 %>%
     labels = c("Not significant", "Significant"),
     name   = "Significance",
   ) + 
-  # geom_label_repel(
-  #   data = sigASVs_sex, # Use the filtered data for only the points you want to label
-  #   aes(x = log2FoldChange, y = -log10(padj), label = Genus),
-  #   size = 3.5,
-  #   box.padding = 0.9,
-  #   point.padding = 0.5,
-  # ) +
+  geom_label_repel(
+    data = sigASVs_T6_T1_merge, # Use the filtered data for only the points you want to label
+    aes(x = log2FoldChange, y = -log10(padj), label = Genus),
+    size = 3.5,
+    box.padding = 0.6,
+    point.padding = 0.5
+  ) +
   geom_vline(xintercept = c(-2, 2), linetype = "dashed", color = "darkgrey") +
   geom_hline(yintercept = -log10(0.01), linetype = "dashed", color = "darkgrey") +
   labs(title = "T6 vs T1",
@@ -133,3 +157,5 @@ vol_plot_T6_T1_upd <- res_calf_T6_T1 %>%
         panel.grid.minor = element_blank(),
         legend.position = "none")
 vol_plot_T6_T1_upd
+
+ggsave("calf_DEG/labelled_graph/vol_plot_T6_T1_upd.png", vol_plot_T6_T1_upd, width = 8, height = 6.5, dpi = 300, bg = "white")
