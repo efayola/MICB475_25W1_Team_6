@@ -329,7 +329,7 @@ sigASVs_T8_T5_merge <- tax_table(T8_T5_DESeq) %>% as.data.frame() %>%
   mutate(Genus = factor(Genus, levels=unique(Genus))) %>%
   mutate(Score = -log10(padj) * abs(log2FoldChange))  %>%
   arrange(desc(Score)) %>%
-  slice_head(n = 10)
+  slice_head(n = 20)
 View(sigASVs_T8_T5_merge)
 
 #graph volcano plot
