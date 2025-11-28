@@ -46,7 +46,7 @@ calf_gg_richness_sex_no_overlap$layers <- calf_gg_richness_sex_no_overlap$layers
 calf_gg_richness_sex_no_overlap
 
 #save
-ggsave(filename = "calf_gg_richness_sex_no_overlap.png"
+ggsave(filename = "alpha_diversity_curve/calf_gg_richness_sex_no_overlap.png"
        , calf_gg_richness_sex_no_overlap
        , height=4, width=6)
 
@@ -60,7 +60,7 @@ calf_gg_richness_sex_no_overlap_with_stats <- calf_gg_richness_sex_no_overlap +
 calf_gg_richness_sex_no_overlap_with_stats
 
 #save
-ggsave(filename = "calf_gg_richness_sex_no_overlap_with_stats.png"
+ggsave(filename = "alpha_diversity_curve/calf_gg_richness_sex_no_overlap_with_stats.png"
        , calf_gg_richness_sex_no_overlap_with_stats
        , height=4, width=6)
 
