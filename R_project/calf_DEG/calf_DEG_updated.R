@@ -60,20 +60,8 @@ sigASVs_sex <- tax_table(male_female_DESeq) %>% as.data.frame() %>%
   mutate(Genus = factor(Genus, levels=unique(Genus)))
 View(sigASVs_sex)
 
-res_calf_sex_labeled <- res_calf_sex %>%
-  left_join(
-    sigASVs_sex %>% select(ASV, Genus), # Select only the ID and the label column
-    by = c("row" = "ASV") # Join 'row' from res_calf_sex to 'ASV' from sigASVs_sex
-  )
-View(res_calf_sex_labeled)
-
-#Create a filtered dataframe containing only the points you want to label
-label_data <- res_calf_sex_labeled %>%
-  filter(!is.na(Genus)) # Keep only the rows that got a match (i.e., have a Genus label)
-View(label_data)
-
 #graph volcano plot
-vol_plot_sex_upd <- res_calf_sex_labeled %>%
+vol_plot_sex_upd <- res_calf_sex %>%
   mutate(significant = padj<0.01 & abs(log2FoldChange)>1.9) %>%
   ggplot() +
     geom_point(aes(x=log2FoldChange, y=-log10(padj), col=significant),size = 2, alpha = 0.8) + 
@@ -82,21 +70,22 @@ vol_plot_sex_upd <- res_calf_sex_labeled %>%
       labels = c("Not significant", "Significant"),
       name   = "Significance",
     ) + 
-    geom_text_repel(
+    geom_label_repel(
       data = sigASVs_sex, # Use the filtered data for only the points you want to label
       aes(x = log2FoldChange, y = -log10(padj), label = Genus),
       size = 3.5,
-      box.padding = 0.5,
+      box.padding = 0.9,
       point.padding = 0.5,
-      max.overlaps = Inf # Use this cautiously for many points, but ensures all labels are attempted
     ) +
     geom_vline(xintercept = c(-1.9, 1.9), linetype = "dashed", color = "darkgrey") +
     geom_hline(yintercept = -log10(0.01), linetype = "dashed", color = "darkgrey") +
-    # labs(title = title,
-    #      x = expression(Log[2]* "Fold Change"),
-    #      y = expression(-Log[10]*"(adj. p-value)")) +
+    labs(title = "M vs F",
+         x = expression(Log[2]* "Fold Change"),
+         y = expression(-Log[10]*"(adj. p-value)")) +
     theme_minimal(base_size = 13) +
-    theme(plot.title = element_text(face = "bold", hjust = 0.5)) 
-          # panel.grid.major = element_blank(),
-          # panel.grid.minor = element_blank())
+    theme(plot.title = element_text(face = "bold", hjust = 0.5),
+          panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          legend.position = "none")
 vol_plot_sex_upd
+ggsave("calf_DEG/labelled_graph/vol_plot_sex_upd.png", width = 8, height = 6.5, dpi = 300, bg = "white")
