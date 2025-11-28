@@ -10,6 +10,8 @@ library(ggplot2)
 
 #load data
 load("all_phyloseq_objects/calf_phyloseq_rare.RData")
+####### Load Final not Rare
+
 
 # #### DESeq ####
 # calf_plus1 <- transform_sample_counts(calf_phyloseq_rare, function(x) x+1)
