@@ -41,7 +41,10 @@ T1_T5_sex_venn <- ggVennDiagram(x = list_T1_T5_sex,
                                 edge_size = 0.8,     
                                 set_size = 5,         
                                 label_size = 4) +
-                  scale_fill_gradient(low = "#E3F9FC", high = "#82C1FF") 
+                  scale_fill_gradient(low = "#E3F9FC", high = "#82C1FF") +
+                                      guides(fill = guide_colorbar(
+                                      barheight = unit(5, "cm"),
+                                      barwidth  = unit(1, "cm")))
 
 # save Venn diagram
 ggsave("venn_sex_T1_T5.png", T1_T5_sex_venn, width = 10, height = 10, dpi = 300)
@@ -75,7 +78,10 @@ T5_T8_sex_venn <- ggVennDiagram(x = list_T5_T8_sex,
                                 edge_size = 0.8,     
                                 set_size = 5,         
                                 label_size = 4) +
-                  scale_fill_gradient(low = "#E5FFDB", high = "#77D184")
+                  scale_fill_gradient(low = "#E5FFDB", high = "#77D184") +
+                                      guides(fill = guide_colorbar(
+                                      barheight = unit(5, "cm"),
+                                      barwidth  = unit(1, "cm")))
 
 # save Venn diagram
 ggsave("venn_sex_T5_T8.png", T5_T8_sex_venn, width = 10, height = 10, dpi = 300)
@@ -109,7 +115,10 @@ T7_T8_sex_venn <- ggVennDiagram(x = list_T7_T8_sex,
                                 edge_size = 0.8,     
                                 set_size = 5,         
                                 label_size = 4) +
-                  scale_fill_gradient(low = "#EEEBF5", high = "#B082FF")
+                  scale_fill_gradient(low = "#EEEBF5", high = "#B082FF") +
+                                      guides(fill = guide_colorbar(
+                                      barheight = unit(5, "cm"),
+                                      barwidth  = unit(1, "cm")))
 
 # save Venn diagram
 ggsave("venn_sex_T7_T8.png", T7_T8_sex_venn, width = 10, height = 10, dpi = 300)
