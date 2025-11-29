@@ -12,6 +12,7 @@ load("all_phyloseq_objects/calf_phyloseq_no_diet.RData")
 load("all_phyloseq_objects/calf_phyloseq_male.RData")
 load("all_phyloseq_objects/calf_phyloseq_female.RData")
 
+#calf_phyloseq_no_diet is rarefied (419 + 55 + 8 - 2)
 calf_phyloseq_no_diet_and_T9 <- subset_samples(calf_phyloseq_no_diet, host_age != "T9")
 nsamples(calf_phyloseq_no_diet_and_T9)
 
