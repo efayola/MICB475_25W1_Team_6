@@ -22,6 +22,20 @@ set.seed(42)
 calf_dm_braycurtis <- vegdist(t(otu_table(calf_phyloseq_no_diet_and_T9)), method="bray") # Bray-curtis
 calf_pcoa_bc <- ordinate(calf_phyloseq_no_diet_and_T9, method="PCoA", distance=calf_dm_braycurtis)
 
+#PERMANOVA test
+samp_dat_wdiv <- data.frame(sample_data(calf_phyloseq_no_diet_and_T9), estimate_richness(calf_phyloseq_no_diet_and_T9))
+adonis2(calf_dm_braycurtis ~ host_age, data=samp_dat_wdiv)
+#           Df SumOfSqs     R2      F Pr(>F)    
+# Model      7   17.421 0.1033 6.7636  0.001 ***
+# Residual 411  151.232 0.8967                  
+# Total    418  168.654 1.0000    
+
+adonis2(calf_dm_braycurtis ~ host_sex, data=samp_dat_wdiv)
+#           Df SumOfSqs      R2      F Pr(>F)  
+# Model      1    0.654 0.00388 1.6241  0.019 *
+# Residual 417  167.999 0.99612                
+# Total    418  168.654 1.00000                
+
 
 #Time Points & Sex
 calf_gg_pcoa <- plot_ordination(calf_phyloseq_no_diet_and_T9, calf_pcoa_bc, color = "host_age", shape="host_sex") +
