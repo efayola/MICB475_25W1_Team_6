@@ -36,8 +36,12 @@ core_T5_male <- core_members(calf_T5_male, detection = 0.001, prevalence = 0.3)
 list_T1_T5_sex <- list("T1 Female" = core_T1_female, "T1 Male" = core_T1_male,
                  "T5 Female" = core_T5_female, "T5 Male" = core_T5_male)
 
-T1_T5_sex_venn <- ggVennDiagram(x = list_T1_T5_sex) +
-                  scale_fill_gradient(low = "#E3F9FC", high = "#97DCE6") 
+T1_T5_sex_venn <- ggVennDiagram(x = list_T1_T5_sex, 
+                                label_alpha = 0, 
+                                edge_size = 0.8,     
+                                set_size = 5,         
+                                label_size = 4) +
+                  scale_fill_gradient(low = "#E3F9FC", high = "#82C1FF") 
 
 # save Venn diagram
 ggsave("venn_sex_T1_T5.png", T1_T5_sex_venn, width = 10, height = 10, dpi = 300)
@@ -66,8 +70,12 @@ core_T8_male <- core_members(calf_T8_male, detection = 0.001, prevalence = 0.3)
 list_T5_T8_sex <- list("T5 Female" = core_T5_female, "T5 Male" = core_T5_male,
                        "T8 Female" = core_T8_female, "T8 Male" = core_T8_male)
 
-T5_T8_sex_venn <- ggVennDiagram(x = list_T5_T8_sex) +
-                  scale_fill_gradient(low = "#E9F7D2", high = "#B1EB5B")
+T5_T8_sex_venn <- ggVennDiagram(x = list_T5_T8_sex, 
+                                label_alpha = 0, 
+                                edge_size = 0.8,     
+                                set_size = 5,         
+                                label_size = 4) +
+                  scale_fill_gradient(low = "#E5FFDB", high = "#77D184")
 
 # save Venn diagram
 ggsave("venn_sex_T5_T8.png", T5_T8_sex_venn, width = 10, height = 10, dpi = 300)
@@ -96,8 +104,12 @@ core_T8_male <- core_members(calf_T8_male, detection = 0.001, prevalence = 0.3)
 list_T7_T8_sex <- list("T7 Female" = core_T7_female, "T7 Male" = core_T7_male,
                 "T8 Female" = core_T8_female, "T8 Male" = core_T8_male)
 
-T7_T8_sex_venn <- ggVennDiagram(x = list_T7_T8_sex) +
-                  scale_fill_gradient(low = "#EEEBF5", high = "#AD92F0")
+T7_T8_sex_venn <- ggVennDiagram(x = list_T7_T8_sex, 
+                                label_alpha = 0, 
+                                edge_size = 0.8,     
+                                set_size = 5,         
+                                label_size = 4) +
+                  scale_fill_gradient(low = "#EEEBF5", high = "#B082FF")
 
 # save Venn diagram
 ggsave("venn_sex_T7_T8.png", T7_T8_sex_venn, width = 10, height = 10, dpi = 300)
