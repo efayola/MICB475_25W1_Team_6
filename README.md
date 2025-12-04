@@ -11,6 +11,6 @@
   [November 6](Meetings/November_6.md) [November 20](Meetings/November_20.md)
   
   
-  [November 27](Meetings/November_27.md) [December 4](Meetings/December.md)
+  [November 27](Meetings/November_27.md) [December 4](Meetings/December_4.md)
  
 ## Lab Notebook
