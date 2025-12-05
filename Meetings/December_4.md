@@ -9,8 +9,9 @@
 for manuscript:
 - make sure to add references for everything (tools, QIIME, R packages, etc.)
 - results section: titles should convey our main findings in one sentence, in bold
-- include p values in figure legend
+- include p values in figure legend, not in text body (Results)
 - add comparisons between T5/T6 and T7/T8 in supplementary section
 - tax glom core microbiome? email Evelyn and Avril to clarify if we need to do this
+    - tax glom at genus level. More robust statistically than ASVs.  
 - can keep taxa bar plot at Phylum level
 - draft manuscript is due Dec 14 11:59PM
