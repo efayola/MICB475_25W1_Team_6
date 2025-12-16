@@ -14,3 +14,7 @@
   [November 27](Meetings/November_27.md) [December 4](Meetings/December_4.md)
  
 ## Lab Notebook
+
+[QIIME2]() processing was done on fecal microbiome 16s RNA sequencing data from Kim et al. (2025)
+
+Subsequent downstream analyses including alpha- and beta-diversity metrics, core microbiome analysis, and differential abundance were conducted on [R]().
