@@ -1,5 +1,5 @@
 # MICB475_25W1_Team_6
-
+This project and study wanted to determine whether host sex influenced microbial diversity in calves on top of changes driven by age. Our analyses also observed the shift in microbial composition and diversity of the calves. 
 
 ## Meeting Minutes and Agenda
   ### October
