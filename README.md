@@ -15,6 +15,8 @@
  
 ## Lab Notebook
 
-[QIIME2]() processing was done on fecal microbiome 16s RNA sequencing data from Kim et al. (2025)
+[QIIME2](QIIME2) processing was done on fecal microbiome 16s RNA sequencing data from [Kim et al., 2025](https://www.nature.com/articles/s41597-025-04677-7).
 
-Subsequent downstream analyses including alpha- and beta-diversity metrics, core microbiome analysis, and differential abundance were conducted on [R]().
+Reads are 
+
+Subsequent downstream analyses including alpha- and beta-diversity metrics, core microbiome analysis, and differential abundance were conducted on [R](R_project).
