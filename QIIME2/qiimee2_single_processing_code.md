@@ -1,3 +1,8 @@
+## Login Information
+
+```ssh root@10.19.139.156 ```  
+password: Biome2055
+
 ### Screen session
 ```screen -r team6_single```
 
