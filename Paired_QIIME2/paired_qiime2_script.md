@@ -28,3 +28,5 @@ qiime demux summarize \
   --i-data /datasets/project_2/calf/demux.qza \
   --o-visualization paired_demux.qzv
 ```
+### Error Log
+/tmp/qiime2-q2cli-err-70n694_s.log
