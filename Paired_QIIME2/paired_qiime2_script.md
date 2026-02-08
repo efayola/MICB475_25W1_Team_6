@@ -58,10 +58,10 @@ EOFError: Compressed file ended before the end-of-stream marker was reached
 ### Denoising with DADA2
 ```
   qiime dada2 denoise-paired \
-    --i-demultiplexed-seqs demux-paired.qza \
+    --i-demultiplexed-seqs paired_demux_seqs.qza \
     --p-trunc-len-f 228 \
     --p-trunc-len-r 213 \
-    --o-representative-sequences representative-sequences.qza \
-    --o-table table.qza \
-    --o-denoising-stats denoising-stats.qza
+    --o-representative-sequences paired_representative-sequences.qza \
+    --o-table paired_table.qza \
+    --o-denoising-stats paired_denoising-stats.qza
 ```
