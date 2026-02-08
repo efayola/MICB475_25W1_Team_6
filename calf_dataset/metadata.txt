@@ -1,0 +1,484 @@
+sample-id	host_subject_id	host_age	env_local_scale	env_medium	geo_loc_name	HOST	host_sex
+SRR29856899	15	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856900	49	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856901	14	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856902	13	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856903	12	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856904	11	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856905	10	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856906	1	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856907	9	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856908	33	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856909	8	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856910	7	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856911	6	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856912	51	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856913	50	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856914	5	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856915	26	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856916	25	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856917	24	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856918	23	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856919	22	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856920	21	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856921	20	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856922	2	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856923	25	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856924	19	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856925	18	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856926	17	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856927	16	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856928	15	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856929	14	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856930	13	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856931	12	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856932	11	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856933	10	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856934	24	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856935	1	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856936	9	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856937	8	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856938	7	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856939	6	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856940	51	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856941	50	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856942	5	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856943	3	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	male
+SRR29856944	51	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856945	3	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	male
+SRR29856946	2	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	male
+SRR29856947	2	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	male
+SRR29856948	27	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	female
+SRR29856949	27	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	female
+SRR29856950	23	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	female
+SRR29856951	23	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	female
+SRR29856952	23	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	female
+SRR29856953	50	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856954	21	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	female
+SRR29856955	21	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	female
+SRR29856956	21	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	female
+SRR29856957	1	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	male
+SRR29856958	1	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	male
+SRR29856959	1	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	male
+SRR29856960	17	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	female
+SRR29856961	17	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	female
+SRR29856962	17	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	female
+SRR29856963	16	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	male
+SRR29856964	5	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856965	16	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	male
+SRR29856966	16	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	male
+SRR29856967	15	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	male
+SRR29856968	15	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	male
+SRR29856969	15	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	male
+SRR29856970	14	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	male
+SRR29856971	49	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856972	48	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856973	47	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856974	46	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856975	45	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856976	44	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856977	41	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856978	43	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856979	42	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856980	41	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856981	40	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856982	4	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856983	39	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856984	38	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856985	37	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856986	36	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856987	35	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856988	40	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856989	34	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856990	33	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856991	32	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856992	31	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856993	30	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856994	3	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856995	29	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856996	28	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856997	27	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29856998	26	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29856999	49	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857000	48	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857001	47	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857002	46	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857003	32	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857004	45	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857005	44	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857006	43	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857007	42	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857008	41	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857009	40	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857010	4	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857011	39	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857012	38	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857013	37	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857014	31	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857015	36	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857016	35	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857017	34	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857018	33	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857019	32	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857020	31	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857021	30	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857022	3	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857023	29	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857024	28	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857025	30	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857026	27	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857027	49	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857028	48	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857029	23	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857030	47	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857031	46	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857032	45	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857033	44	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857034	43	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857035	42	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857036	41	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857037	40	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857038	4	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857039	39	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857040	22	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857041	38	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857042	37	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857043	36	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857044	35	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857045	34	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857046	33	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857047	32	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857048	31	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857049	30	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857050	3	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857051	21	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857052	29	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857053	28	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857054	27	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857055	19	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857056	10	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857057	1	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857058	48	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857059	47	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857060	46	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857061	45	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857062	44	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857063	43	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857064	42	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857065	41	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857066	40	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857067	4	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857068	18	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857069	39	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857070	38	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857071	37	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857072	36	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857073	35	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857074	34	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857075	33	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857076	32	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857077	31	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857078	30	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857079	17	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857080	3	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857081	29	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857082	28	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857083	27	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857084	14	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	male
+SRR29857085	14	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	male
+SRR29857086	13	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	female
+SRR29857087	13	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	female
+SRR29857088	49	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857089	13	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	female
+SRR29857090	12	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	male
+SRR29857091	12	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	male
+SRR29857092	12	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	male
+SRR29857093	11	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	female
+SRR29857094	11	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	female
+SRR29857095	10	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	female
+SRR29857096	10	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	female
+SRR29857097	48	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857098	9	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857099	8	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857100	7	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857101	6	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857102	51	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857103	50	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857104	5	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857105	49	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857106	48	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857107	47	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857108	47	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857109	46	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857110	45	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857111	44	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857112	4	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857113	43	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857114	25	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857115	24	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857116	23	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857117	22	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857118	21	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857119	20	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857120	2	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857121	19	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857122	18	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857123	17	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857124	39	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857125	16	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857126	15	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857127	14	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857128	13	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857129	12	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857130	11	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857131	10	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857132	1	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857133	9	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857134	8	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857135	38	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857136	7	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857137	6	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857138	51	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857139	50	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857140	5	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857141	26	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857142	49	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857143	25	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857144	24	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857145	23	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857146	22	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857147	21	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857148	20	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857149	2	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857150	19	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857151	3	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857152	18	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857153	17	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857154	16	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857155	15	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857156	14	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857157	13	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857158	12	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857159	11	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857160	10	T5	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857161	1	T5	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857162	29	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857163	9	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857164	8	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857165	7	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857166	6	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857167	51	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857168	50	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857169	5	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857170	26	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857171	49	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857172	25	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857173	24	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857174	23	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857175	22	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857176	21	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857177	20	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857178	20	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857179	2	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857180	19	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857181	18	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857182	17	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857183	16	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857184	15	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857185	14	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857186	13	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857187	12	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857188	11	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857189	2	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857190	10	T3	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857191	1	T3	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857192	9	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857193	8	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857194	7	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857195	6	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857196	51	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857197	50	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857198	5	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857199	26	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857200	25	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857201	24	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857202	23	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857203	22	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857204	21	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857205	16	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857206	20	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857207	2	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857208	19	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857209	18	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857210	17	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857211	16	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857212	15	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857213	14	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857214	13	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857215	12	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857216	15	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857217	11	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857218	10	T2	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857219	1	T2	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857220	9	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857221	8	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857222	7	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857223	6	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857224	57	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857225	56	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857226	55	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857227	14	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857228	42	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857229	41	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857230	40	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857231	4	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857232	39	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857233	38	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857234	46	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857235	13	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857236	37	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857237	36	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857238	35	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857239	34	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857240	33	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857241	32	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857242	31	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857243	30	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857244	3	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857245	29	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857246	45	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857247	28	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857248	27	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857249	26	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857250	25	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857251	24	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857252	23	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857253	22	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857254	21	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857255	20	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857256	48	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857257	47	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857258	46	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857259	45	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857260	37	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857261	12	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857262	44	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857263	43	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857264	42	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857265	41	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857266	40	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857267	4	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857268	39	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857269	38	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857270	37	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857271	36	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857272	36	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857273	35	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857274	34	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857275	33	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857276	32	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857277	31	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857278	30	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857279	3	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857280	29	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857281	28	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857282	27	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857283	35	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857284	48	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857285	47	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857286	28	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857287	11	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857288	46	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857289	45	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857290	44	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857291	43	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857292	42	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857293	41	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857294	40	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857295	4	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857296	39	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857297	38	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857298	27	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857299	37	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857300	36	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857301	35	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857302	34	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857303	33	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857304	32	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857305	31	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857306	30	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857307	3	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857308	29	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857309	26	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857310	28	T4	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857311	27	T4	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857312	54	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857313	not applicable	not applicable	Food	Maternal milk	South Korea	Bos taurus coreanae	not applicable
+SRR29857314	not applicable	not applicable	Food	Maternal milk	South Korea	Bos taurus coreanae	not applicable
+SRR29857315	not applicable	not applicable	Food	Maternal milk	South Korea	Bos taurus coreanae	not applicable
+SRR29857316	not applicable	not applicable	Food	Maternal milk	South Korea	Bos taurus coreanae	not applicable
+SRR29857317	not applicable	not applicable	Food	Maternal milk	South Korea	Bos taurus coreanae	not applicable
+SRR29857318	not applicable	not applicable	Food	Maternal milk	South Korea	Bos taurus coreanae	not applicable
+SRR29857319	not applicable	not applicable	Food	Food pellet	South Korea	not applicable	not applicable
+SRR29857320	not applicable	not applicable	Food	Food pellet	South Korea	not applicable	not applicable
+SRR29857321	53	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857322	9	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	male
+SRR29857323	9	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	male
+SRR29857324	9	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	male
+SRR29857325	8	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	male
+SRR29857326	8	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	male
+SRR29857327	8	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	male
+SRR29857328	7	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	female
+SRR29857329	7	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	female
+SRR29857330	7	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	female
+SRR29857331	6	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	male
+SRR29857332	52	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857333	6	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	male
+SRR29857334	6	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	male
+SRR29857335	5	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	female
+SRR29857336	5	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	female
+SRR29857337	4	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	female
+SRR29857338	4	T9	Cattle	Content of rumen	South Korea	Bos taurus coreanae	female
+SRR29857339	4	T9	Cattle	Content of large intestine	South Korea	Bos taurus coreanae	female
+SRR29857340	3	T9	Cattle	Content of small intestine	South Korea	Bos taurus coreanae	male
+SRR29857341	2	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857342	44	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857343	19	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857344	18	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857345	17	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857346	16	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857347	15	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857348	14	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857349	13	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857350	12	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857351	11	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857352	10	T8	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857353	43	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857354	1	T8	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857355	9	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857356	8	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857357	7	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857358	6	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857359	57	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857360	56	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857361	55	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857362	54	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857363	53	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857364	42	T1	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857365	52	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857366	51	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857367	50	T7	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857368	5	T7	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857369	26	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857370	25	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857371	24	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857372	23	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857373	22	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857374	21	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857375	20	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857376	2	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857377	19	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857378	18	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857379	34	T1	Cattle	Feces	South Korea	Bos taurus coreanae	male
+SRR29857380	17	T6	Cattle	Feces	South Korea	Bos taurus coreanae	female
+SRR29857381	16	T6	Cattle	Feces	South Korea	Bos taurus coreanae	male
