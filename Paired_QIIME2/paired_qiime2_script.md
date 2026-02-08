@@ -11,7 +11,7 @@ password: Biome1228
 
 ## Code
 **Session detached screen information**  
- ```screen -R team6_paired```
+ ```screen -r team6_paired```
 
 ### Importing Code into QIIME2
 Code adapted from QIIME2 doc under “Fastq manifest” formats ([Here](https://docs.qiime2.org/2024.10/tutorials/importing/#sequence-data-with-sequence-quality-information-i-e-fastq)).
