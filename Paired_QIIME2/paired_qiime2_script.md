@@ -25,6 +25,6 @@ qiime tools import \
 ### Create visualization of demultiplexed samples
 ```
 qiime demux summarize \
-  --i-data paired_demux_seqs.qza \
+  --i-data datasets/project_2/calf/demux.qza \
   --o-visualization paired_demux.qzv
 ```
