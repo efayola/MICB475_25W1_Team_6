@@ -55,3 +55,13 @@ EOFError: Compressed file ended before the end-of-stream marker was reached
 ```
 ### Download
 ```scp root@10.19.139.182:/data/team6_paired/paired_demux.qzv .```
+### Denoising with DADA2
+```
+  qiime dada2 denoise-paired \
+    --i-demultiplexed-seqs demux-paired.qza \
+    --p-trunc-len-f 228 \
+    --p-trunc-len-r 213 \
+    --o-representative-sequences representative-sequences.qza \
+    --o-table table.qza \
+    --o-denoising-stats denoising-stats.qza
+```
