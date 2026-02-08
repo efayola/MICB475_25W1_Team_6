@@ -20,11 +20,11 @@ qiime tools import \
   --type "SampleData[PairedEndSequencesWithQuality]" \  
   --input-format PairedEndFastqManifestPhred33V2 \  
   --input-path /datasets/project_2/calf/manifest.txt \  
-  --output-path ./demux_seqs.qza
+  --output-path ./paired_demux_seqs.qza
 ```
 ### Create visualization of demultiplexed samples
 ```
 qiime demux summarize \
-  --i-data demux_seqs.qza \
-  --o-visualization demux.qzv
+  --i-data paired_demux_seqs.qza \
+  --o-visualization paired_demux.qzv
 ```
