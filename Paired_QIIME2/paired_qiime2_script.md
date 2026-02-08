@@ -65,3 +65,13 @@ EOFError: Compressed file ended before the end-of-stream marker was reached
     --o-table paired_table.qza \
     --o-denoising-stats paired_denoising-stats.qza
 ```
+### Training Classifiers
+```
+qiime feature-classifier extract-reads \
+  --i-sequences /datasets/classifiers/silva_ref_files/silva-138-99-seqs.qza \
+  --p-f-primer CCTACGGGNGGCWGCAG \
+  --p-r-primer GACTACHVGGGTATCTAATCC \
+  --p-min-length 400 \
+  --p-max-length 500 \
+  --o-reads ref-seqs-trimmed400-500.qza
+```
