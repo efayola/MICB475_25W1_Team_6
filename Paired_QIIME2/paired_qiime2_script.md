@@ -28,7 +28,7 @@ qiime demux summarize \
   --i-data paired_demux_seqs.qza \
   --o-visualization paired_demux.qzv
 ```
-### Error Log
+**Error Log Fixed**
 ```
 (qiime2-amplicon-2025.4) root@stu-13829:/data/team6_paired# cat /tmp/qiime2-q2cli-err-70n694_s.log
 Traceback (most recent call last):
@@ -53,3 +53,5 @@ Traceback (most recent call last):
     raise EOFError("Compressed file ended before the "
 EOFError: Compressed file ended before the end-of-stream marker was reached
 ```
+### Download
+```scp root@10.19.139.182:/data/team6_paired/paired_demux.qzv .```
