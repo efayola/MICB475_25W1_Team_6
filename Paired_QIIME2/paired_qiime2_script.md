@@ -74,4 +74,9 @@ qiime feature-classifier extract-reads \
   --p-min-length 400 \
   --p-max-length 500 \
   --o-reads ref-seqs-trimmed400-500.qza
+
+qiime feature-classifier fit-classifier-naive-bayes \
+  --i-reference-reads ref-seqs-trimmed400-500.qza \
+  --i-reference-taxonomy /datasets/classifiers/silva_ref_files/silva-138-99-tax.qza \
+  --o-classifier classifier400-500.qza
 ```
