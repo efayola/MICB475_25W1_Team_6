@@ -65,6 +65,18 @@ EOFError: Compressed file ended before the end-of-stream marker was reached
     --o-table paired_table.qza \
     --o-denoising-stats paired_denoising-stats.qza
 ```
+**Forward 260 Reverse 200**
+- Forward Reads: Above Q25 until 236 bp. Above Q20 until 266 bp.
+- Reverse Reads: Above Q25 until 195 bp. Above Q20 until 214 bp.
+```
+  qiime dada2 denoise-paired \
+    --i-demultiplexed-seqs paired_demux_seqs.qza \
+    --p-trunc-len-f 260 \
+    --p-trunc-len-r 200 \
+    --o-representative-sequences paired_representative-sequences_f260_r200.qza \
+    --o-table paired_table_f260_r200.qza \
+    --o-denoising-stats paired_denoising-stats_f260_r200.qza
+```
 ### Training Classifiers
 ```
 qiime feature-classifier extract-reads \
