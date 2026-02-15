@@ -89,7 +89,7 @@ scp root@10.19.139.182:/data/team6_paired/paired_denoising-stats.qzv .
 
 ```
   qiime dada2 denoise-paired \
-    --i-demultiplexed-seqs paired_demux_seqs.qza \
+    --i-demultiplexed-seqs ../paired_demux_seqs.qza \
     --p-trunc-len-f 266 \
     --p-trunc-len-r 214 \
     --o-representative-sequences paired_representative-sequences_f266_r214.qza \
