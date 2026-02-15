@@ -65,6 +65,14 @@ EOFError: Compressed file ended before the end-of-stream marker was reached
     --o-table paired_table.qza \
     --o-denoising-stats paired_denoising-stats.qza
 ```
+**Checking Merging Quality**
+```
+qiime metadata tabulate \
+  --m-input-file paired_denoising-stats.qza \
+  --o-visualization paired_denoising-stats.qzv
+
+scp root@10.19.139.182:/data/team6_paired/paired_denoising-stats.qzv .
+```
 **Forward 260 Reverse 200**
 - Forward Reads: Above Q25 until 236 bp. Above Q20 until 266 bp.
 - Reverse Reads: Above Q25 until 195 bp. Above Q20 until 214 bp.
