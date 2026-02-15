@@ -85,6 +85,18 @@ scp root@10.19.139.182:/data/team6_paired/paired_denoising-stats.qzv .
     --o-table paired_table_f260_r200.qza \
     --o-denoising-stats paired_denoising-stats_f260_r200.qza
 ```
+
+
+```
+  qiime dada2 denoise-paired \
+    --i-demultiplexed-seqs paired_demux_seqs.qza \
+    --p-trunc-len-f 266 \
+    --p-trunc-len-r 214 \
+    --o-representative-sequences paired_representative-sequences_f266_r214.qza \
+    --o-table paired_table_f266_r214.qza \
+    --o-denoising-stats paired_denoising-stats_f266_r214.qza
+```
+
 ### Training Classifiers
 ```
 qiime feature-classifier extract-reads \
