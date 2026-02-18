@@ -78,14 +78,13 @@ scp root@10.19.139.182:/data/team6_paired/paired_denoising-stats.qzv .
 - Reverse Reads: Above Q25 until 195 bp. Above Q20 until 214 bp.
 ```
   qiime dada2 denoise-paired \
-    --i-demultiplexed-seqs paired_demux_seqs.qza \
+    --i-demultiplexed-seqs ../paired_demux_seqs.qza \
     --p-trunc-len-f 260 \
     --p-trunc-len-r 200 \
     --o-representative-sequences paired_representative-sequences_f260_r200.qza \
     --o-table paired_table_f260_r200.qza \
     --o-denoising-stats paired_denoising-stats_f260_r200.qza
 ```
-
 
 ```
   qiime dada2 denoise-paired \
@@ -95,6 +94,16 @@ scp root@10.19.139.182:/data/team6_paired/paired_denoising-stats.qzv .
     --o-representative-sequences paired_representative-sequences_f266_r214.qza \
     --o-table paired_table_f266_r214.qza \
     --o-denoising-stats paired_denoising-stats_f266_r214.qza
+```
+
+```
+  qiime dada2 denoise-paired \
+    --i-demultiplexed-seqs ../paired_demux_seqs.qza \
+    --p-trunc-len-f 255 \
+    --p-trunc-len-r 195 \
+    --o-representative-sequences paired_representative-sequences_f255_r195.qza \
+    --o-table paired_table_f255_r195.qza \
+    --o-denoising-stats paired_denoising-stats_f255_r195.qza
 ```
 
 ### Training Classifiers
