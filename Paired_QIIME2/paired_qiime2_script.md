@@ -22,7 +22,6 @@ qiime tools import \
   --input-path /datasets/project_2/calf/manifest.txt \  
   --output-path ./paired_demux_seqs.qza
 ```
-
 ```
 qiime tools import \
   --type "SampleData[PairedEndSequencesWithQuality]" \  
