@@ -35,6 +35,11 @@ qiime demux summarize \
   --i-data paired_demux_seqs.qza \
   --o-visualization paired_demux.qzv
 ```
+```
+qiime demux summarize \
+  --i-data new_paired_demux_seqs.qza \
+  --o-visualization new_paired_demux.qzv
+```
 **Error Log Fixed**
 ```
 (qiime2-amplicon-2025.4) root@stu-13829:/data/team6_paired# cat /tmp/qiime2-q2cli-err-70n694_s.log
