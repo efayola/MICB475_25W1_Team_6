@@ -77,13 +77,20 @@ EOFError: Compressed file ended before the end-of-stream marker was reached
     --o-table paired_table.qza \
     --o-denoising-stats paired_denoising-stats.qza
 ```
-**Checking Merging Quality**
+### [1] Checking Merging Quality 
 ```
 qiime metadata tabulate \
   --m-input-file paired_denoising-stats.qza \
   --o-visualization paired_denoising-stats.qzv
 
 scp root@10.19.139.182:/data/team6_paired/paired_denoising-stats.qzv .
+```
+
+```
+qiime feature-table summarize \
+  --i-table paired_table.qza \
+  --o-visualization paired_table.qzv \
+  --m-sample-metadata-file /datasets/project_2/calf/metadata.txt
 ```
 **Forward 260 Reverse 200**
 - Forward Reads: Above Q25 until 236 bp. Above Q20 until 266 bp.
@@ -132,4 +139,24 @@ qiime feature-classifier fit-classifier-naive-bayes \
   --i-reference-reads ref-seqs-trimmed400-500.qza \
   --i-reference-taxonomy /datasets/classifiers/silva_ref_files/silva-138-99-tax.qza \
   --o-classifier classifier400-500.qza
+```
+### [2] Taxonomy
+```
+qiime feature-classifier classify-sklearn \
+--i-classifier classifier400-500.qza \
+--i-reads paired_representative-sequences.qza \
+--o-classification paired_taxonomy.qza
+```
+
+### [3] Phylogenetic
+```
+qiime phylogeny align-to-tree-mafft-fasttree \
+  --i-sequences paired_representative-sequences.qza \
+  --p-parttree \
+  --p-mask-max-gap-frequency 0.8 \
+  --p-mask-min-conservation 0.6 \
+  --o-alignment paired_aligned-rep-seqs.qza \
+  --o-masked-alignment masked-paired_aligned-rep-seqs.qza \
+  --o-tree paired_unrooted-tree.qza \
+  --o-rooted-tree paired_rooted-tree.qza
 ```
