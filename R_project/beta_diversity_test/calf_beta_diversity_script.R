@@ -56,6 +56,26 @@ ggsave("beta_diversity_test/calf_gg_pcoa_timepoints.png"
        , calf_gg_pcoa_timepoints
        , height=4, width=5)
 
+
+calf_gg_pcoa_timepoints_no_bg <- calf_gg_pcoa_timepoints +
+  theme(
+    panel.background = element_blank(),
+    panel.grid = element_blank(),
+    plot.background = element_rect(fill = "transparent", color = NA), # Required for transparency
+    legend.background = element_rect(fill = "transparent", color = NA),
+    legend.box.background = element_rect(fill = "transparent", color = NA)
+  )
+calf_gg_pcoa_timepoints_no_bg
+
+# Save with the bg parameter
+ggsave(
+  filename = "beta_diversity_test/calf_gg_pcoa_timepoints_bg_trans.png",
+  plot = calf_gg_pcoa_timepoints_no_bg,
+  height = 6, 
+  width = 7,
+  bg = "transparent"  # This is the key argument for ggsave
+)
+
 #Only Sex
 calf_gg_pcoa_sex <- plot_ordination(calf_phyloseq_no_diet_and_T9, calf_pcoa_bc, color = "host_sex") +
   stat_ellipse(aes(color = host_sex), type = "t", level = 0.95) +
@@ -65,6 +85,25 @@ calf_gg_pcoa_sex
 ggsave("beta_diversity_test/calf_gg_pcoa_sex.png"
        , calf_gg_pcoa_sex
        , height=4, width=5)
+
+calf_gg_pcoa_sex_no_bg <- calf_gg_pcoa_sex +
+  theme(
+    panel.background = element_blank(),
+    panel.grid = element_blank(),
+    plot.background = element_rect(fill = "transparent", color = NA), # Required for transparency
+    legend.background = element_rect(fill = "transparent", color = NA),
+    legend.box.background = element_rect(fill = "transparent", color = NA)
+  )
+calf_gg_pcoa_sex_no_bg
+
+# Save with the bg parameter
+ggsave(
+  filename = "beta_diversity_test/calf_gg_pcoa_sex_bg_trans.png",
+  plot = calf_gg_pcoa_sex_no_bg,
+  height = 6, 
+  width = 7,
+  bg = "transparent"  # This is the key argument for ggsave
+)
 
 # Only Male Beta Diversity
 set.seed(42)
