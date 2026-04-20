@@ -147,6 +147,23 @@ ggsave(filename = "alpha_diversity_curve/calf_gg_richness_timepoints_no_overlap.
        , calf_gg_richness_timepoints_no_overlap
        , height=4, width=6)
 
+calf_gg_richness_timepoints_no_overlap <- calf_gg_richness_timepoints_no_overlap +
+  theme(
+    panel.background = element_blank(),
+    plot.background = element_rect(fill = "transparent", color = NA), # Required for transparency
+    legend.background = element_rect(fill = "transparent", color = NA),
+    legend.box.background = element_rect(fill = "transparent", color = NA)
+  )
+
+# Save with the bg parameter
+ggsave(
+  filename = "alpha_diversity_curve/calf_gg_richness_timepoints_no_overlap_bg_trans.png",
+  plot = calf_gg_richness_timepoints_no_overlap,
+  height = 4, 
+  width = 6,
+  bg = "transparent"  # This is the key argument for ggsave
+)
+
 #added significance test
 calf_gg_richness_timepoints_no_overlap_with_stats <- calf_gg_richness_timepoints_no_overlap + 
   stat_compare_means(
